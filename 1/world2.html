@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>World.2 No one remembers me - Naze Boku no Sekai wo Dare mo Oboeteinainoka</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../text-style.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="../about.html"><strong aria-hidden="true">1.</strong> About</a></li><li><a href="../1/index.html"><strong aria-hidden="true">2.</strong> Volume 1</a></li><li><ol class="section"><li><a href="../1/prologue.html"><strong aria-hidden="true">2.1.</strong> Prologue [0]</a></li><li><a href="../1/world1.html"><strong aria-hidden="true">2.2.</strong> World.1 And so world has changed</a></li><li><a href="../1/world2.html" class="active"><strong aria-hidden="true">2.3.</strong> World.2 No one remembers me</a></li><li><a href="../1/world3.html"><strong aria-hidden="true">2.4.</strong> World.3 Rinne</a></li><li><a href="../1/world4.html"><strong aria-hidden="true">2.5.</strong> World.4 Saviour of humanity's salvation</a></li><li><a href="../1/world5.html"><strong aria-hidden="true">2.6.</strong> World.5 Tenma and young man</a></li><li><a href="../1/world6.html"><strong aria-hidden="true">2.7.</strong> World.6 Storing memory of the world -Code Holder-</a></li><li><a href="../1/epilogue.html"><strong aria-hidden="true">2.8.</strong> Epilogue Story of young man forgotten by world</a></li></ol></li><li><a href="../2/index.html"><strong aria-hidden="true">3.</strong> Volume 2</a></li><li><ol class="section"><li><a href="../2/world1.html"><strong aria-hidden="true">3.1.</strong> World.1 Night is over</a></li><li><a href="../2/world2.html"><strong aria-hidden="true">3.2.</strong> World.2 To the east of the world</a></li><li><a href="../2/world3.html"><strong aria-hidden="true">3.3.</strong> World.3 Io Resistance</a></li><li><a href="../2/intermission.html"><strong aria-hidden="true">3.4.</strong> Intermission Heartless Angel</a></li><li><a href="../2/world4.html"><strong aria-hidden="true">3.5.</strong> World.4 Elven Forest</a></li><li><a href="../2/world5.html"><strong aria-hidden="true">3.6.</strong> World.5 Heavens Purgatory</a></li><li><a href="../2/world6.html"><strong aria-hidden="true">3.7.</strong> World.6 Black Morning Star</a></li><li><a href="../2/epilogue.html"><strong aria-hidden="true">3.8.</strong> Epilogue The Last two</a></li><li><a href="../2/continued.html"><strong aria-hidden="true">3.9.</strong> Continued Last Hero</a></li></ol></li><li><a href="../3/index.html"><strong aria-hidden="true">4.</strong> Volume 3</a></li><li><ol class="section"><li><a href="../3/world1.html"><strong aria-hidden="true">4.1.</strong> World.1 To The South</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Naze Boku no Sekai wo Dare mo Oboeteinainoka</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="./midashi03.jpg" alt="Cover" /></p>
+<p>&quot;We're here. This is out town, or, as I prefer to call it, our secret base.&quot;</p>
+<p>They've been going through ruined city for quite a while.
+But finally Ashlan stopped car by empty highway.</p>
+<p><em>TL Note:</em> I don't really get this sentence, especially the <em>道路の一画で</em> so I tried my best here...</p>
+<p><em>It took us for about 30 minutes?</em></p>
+<p><em>Considering that we are coming from direction of 9th Terminal, and this building.</em></p>
+<p>Twin Tower is towering over surroundings.
+It has 10 floors, and despite it's sad state with broken windows, it's shape was difficult to forget.</p>
+<p>&quot;That seems like 10th Terminal's building...? Then is it 10th Terminal?&quot;</p>
+<p>Urza Federation's 10th Terminal.
+Originally at this place has been <span title="As if there were lots of trees and stuff">lushly green</span> avenue.
+Looking at it now, there were just piles of pebbles from destroyed buildings nearby, and broken road full of cracks.</p>
+<p>&quot;Oh? You know about this place?&quot;</p>
+<p>&quot;You're real mystery. Do you live nearby?&quot;</p>
+<p>Said Ashlan and Saki who came out from car.</p>
+<p>&quot;...Well&quot;</p>
+<p>Kai was coming from outskirts of 8Th Terminal, and they should know about.</p>
+<p>&quot;Well, you should take your time to calm down.
+Considering you were just attacked by demon, I imagine you're still a bit confused.
+Rest a bit and calm yourself.&quot;</p>
+<p>&quot;That's right! Although you seem to know about us,
+your clothes and gun... are not familiar to me.&quot;</p>
+<p>Both were looking at Kai's attire and bayonet.
+He was wearing MDA's standard equipment, but Saki and Ashlan had something different.</p>
+<p>...No, at its core, the design of both uniform is the same.</p>
+<p>...There are few different details. While both uniforms had coat of arms on left side, theirs was different from Kai's
+Kai's coat of arm belonged to MDA, but these two had something different.</p>
+<p>&quot;Hm? We're <span title="jp. 傭兵 can be translated as mercenary, so it might be they are not part of Resistance, but I'm not sure if mercenary job makes sense in post-apocalyptic world">working</span> for Urza Mankind Resistance Army. Wait, you don't even know about it?&quot;</p>
+<p>&quot;<span title="For some reason all organizations want to put humanity/mankind into their names">Mankind</span> Resistance Army?&quot;</p>
+<p>&quot;Ah that's... Rather than confused, you seem like to suffer from temporary amnesia.
+There are no one out there who doesn't know about <span title="From now on, I'll shorten Mankind Resistance Army, besides furigana for it is Resist">Resistance</span>&quot;</p>
+<p>In response to Ashlan, Saki only gave a shrug.</p>
+<p>&quot;Anyway, let's go in. If we're going to remain here, we might be discovered by demon patrols.
+We have some business underground. I mean this Terminal's underground.&quot;</p>
+<p>Ashlan guided Kai, who walked alongside Saki.
+The Terminal's doors seem to be blown off with by impact of explosion.
+Passing through crashed entrance, they started to descent to underground.</p>
+<p>&quot;What about elevator?&quot;</p>
+<p>&quot;I'm pretty sure you can guess just by looking, but do you think there is any electricity left?&quot;</p>
+<p>Ashlan pointed towards dark passage with his <span title="If it sounds weird, blame author :)">chin</span>
+It certainly looked pitch black, if not for sun's light that is coming from broken windows.</p>
+<p>&quot;You know, I have a favour to ask...&quot;</p>
+<p>Kai swallowed his breath, and said.</p>
+<p>&quot;I don't care if you think I lost my memories, but please tell me what happened?
+Why city is ruins and why demons are roaming this place like they own it?&quot;</p>
+<p>That demon said: The best way to order around your slave, is to use their language.</p>
+<p>The situation here is different from what Kai remembers.
+He got approximate picture, but right now he needs to know situation with all possible details.</p>
+<p>&quot;It is as you can see.&quot;</p>
+<p>As they were going through dim underground passage, Ashlan pointed to a ruined walls of the building.</p>
+<p>&quot;This world is filled hordes of natural enemies to mankind.
+And especially troublesome are four races: Demons, Cryptids, Foreign gods and spirits.
+We lost to them in last war.
+It is been 30 years ago by now.&quot;</p>
+<p>&quot;...Mankind lost? That's...&quot;</p>
+<p>This was a opposite to what Kai remembers.
+He would love to think it is just a bad dream.
+Just what happened when he was shopping with Jeanne?</p>
+<p>&quot;...Please continue. What happened to humans? Are they safe?&quot;</p>
+<p>&quot;Escaped and hid whenever they could. Barely made it.&quot; - answered instead Saki, who was walking besides him.</p>
+<p>&quot;The continent is now dominated by these four races.
+And even now they continue to compete for dominance.
+Urza Federation has been conquered by demons,
+So all people could do is abandon everything and run away.
+That's more or less current situation.&quot;</p>
+<p>Saki points towards the end of staircase.
+Third underground floor was in complete silence, and then bright light blinded Kai's eyes.</p>
+<p>&quot;It is bright?&quot;</p>
+<p>From bright light has been shining, and for a second you could think that you're on surface.</p>
+<p><em>So it was like that. If demons dominate the surface.</em></p>
+<p><em>Humans can escape underground.</em></p>
+<p>They used this big underground shopping mall to create city.
+There were shops, people houses, and even hotels with restaurants.
+Kai could see parents with their children walking around and soldiers that were patrolling area with their guns.
+Everything here fits well together.
+Despite it looking different, it was certainly human city. <em>TL Note:</em> The wording here is a bit weird ここには、人間の都市が姿を変えながら確かに存在していた。</p>
+<p>&quot;Welcome to <span title="It sounds weird, but author likes to be specific about race">human</span> city <em>Neo Vishal</em>.
+All unused underground space has been remodelled to create this city.
+It is quite a sight, isn't it?&quot;</p>
+<p>Originally, Vishal is the name of ward where was 10th Terminal.
+Naming city the Neo Vishal, most likely was in place of conquered city on surface.</p>
+<p>&quot;Since demons took away our city and made their nests on its territory,
+it makes sense for us to hide underground, what do you think?&quot;</p>
+<p>&quot;...It is really great, to develop it to such extent.&quot;</p>
+<p>Hearing how this place was made by people who escaped demons in fear,
+Kai imagined it would look miserable.
+But he was pleasantly surprised.
+People looked lively and full of life.</p>
+<p>&quot;What about food?&quot;</p>
+<p>&quot;Of course we produce everything here.
+Since trains are no longer running, it felt like a waste.
+So we removed railway tracks and instead used it to build nice farms.
+Oh and we use solar panels on surface to generate electricity.&quot;</p>
+<p>&quot;Wouldn't demons destroy it?&quot;</p>
+<p>&quot;Demons wouldn't bother to scout rooftops of high buildings.
+And even if they would, to them there isn't much difference between solar panels and rest of the ruins.
+And with electricity we could restart various production plants that could be used to produce medicine and clothes.&quot;</p>
+<p>There is electricity and food.
+Despite four races dominating continent, humanity was able to survive.</p>
+<p>&quot;Saki, Ashlan, do you live here?&quot;</p>
+<p>&quot;Around year by now.
+We were employed in this city as guards.
+The only force that can fight against non-humans is Resistance&quot;</p>
+<p>Saki lowered her hand towards her waist where was hanging gun.
+Normally for young girl like Saki, the automatic rifle of this size would be just too big.</p>
+<p>&quot;Resistance goal is to re-take control from demons in Urza Federation.
+But of course resistance exists all over the world, and in every place there is a similar situation.&quot;</p>
+<p>&quot;...Listen, guys&quot;</p>
+<p>Resolving himself, Kai looked at two of them.
+Humans lost a Great War.
+But it brings a question then.</p>
+<p>&quot;It might sound... as a dumb question. But I really have no idea what's going on here.&quot;</p>
+<p>He then pressed on his question to silent Saki and Ashlan.</p>
+<p>&quot;Why we lost Great War?&quot;</p>
+<p>&quot;....What?&quot;</p>
+<p>&quot;...Even if you're asking why...&quot;</p>
+<p>They were bewildered.</p>
+<p>&quot;Because... there was no way for us to win.&quot; - timidly answered Saki.</p>
+<p>&quot;Neither knife or gun could work against Cryptid's dragons.
+As for spirits, bullets just pass through.
+Then there is demon magic that can vaporize buildings.
+And elves of foreign gods could create magic tools that are superior to our weaponry.
+Moreover the main reason are leaders of these four races who are just incredible strong&quot;</p>
+<p>&quot;You mean four heroes?
+Like Dark Empress Vanessa or Fang King Rath=IE?&quot;</p>
+<p>&quot;Oh, you actually know that much, Kai?&quot;</p>
+<p>After saying that, she looked towards him.</p>
+<p>&quot;If you know that much, then why you thought that there is a chance for us to win in first place?&quot;</p>
+<p>&quot;Why, you ask... I'm just in doubts about this situation.&quot;</p>
+<p>He gave Saki a straight answer.</p>
+<p>&quot;It is just as far as I know, didn't Sid defeat demons and other races?
+Afterwards they were sealed away in graveyards&quot;</p>
+<p><em>TL Note:</em> To be honest in first place I'm not sure how single person could defeat all of them in his reality...</p>
+<p>&quot;Sid?&quot;</p>
+<p>&quot;Who's that?&quot;</p>
+<p>&quot;Wait, guys, I mean we're talking about Prophet Sid. Surely you know about him...&quot;</p>
+<p>The hero who was able to defeat non-humans.
+Just few days ago, they talked about him.</p>
+<p><em>TL Note:</em> Kai really cannot comprehend this situation... <em>facepalm</em></p>
+<p>&quot;If it would just name alone... Hey, Ashlan, do you know anything?&quot;</p>
+<p>&quot;Prophet, you say? And he defeated demons?
+If there would be such guy, do you think we'd continue living underground?&quot;</p>
+<p>Saki and Ashlan looked at each other.
+It looks like, no one is even aware about him.</p>
+<p><em>Not like they are not aware about him.</em></p>
+<p><em>Prophet Sid doesn't even exist in this world!?</em></p>
+<p>Little by little, Kai come to realization just how much differs this world from what he remembers.</p>
+<p>&quot;According to my memories human hero existed.
+Prophet Sid defeated four heroes and thanks to that mankind won Great War
+But...&quot;</p>
+<p>Then...</p>
+<p><em>What would become of world, if Prophet Sid wouldn't exist?</em></p>
+<p>Since there was no one to fight against four heroes, mankind lost.
+That's more or less, the outline of current history.</p>
+<p><em>Certainly at that time</em></p>
+<p><em>When we went shopping with Jeanne, because of that phenomenon, something has changed.</em></p>
+<p>The black hole in sky sucked everything in: clouds, buildings, people, even Jeanne.
+Everything except Kai himself.
+Before he became aware, history of the world itself has changed.</p>
+<p>&quot;Oh is that...? Hey, Ashlan&quot;</p>
+<p>&quot;Yeah, that's our main force coming. Hour earlier than planned.&quot;</p>
+<p>From within city could be heard cheers.
+There was crowd of people.
+People, who were on their way, stopped and moved toward them to give cheers too.</p>
+<p>&quot;We're with Saki are part of unit that is stationed here.
+These guys belong to main army of Resistance.
+And once a month they are going around human cities.
+Their main duty, to put it simply, is to find a way to re-take Urza Federation.&quot;</p>
+<p>The hope to take back surface world.
+But still, even if main body of army comes, would it really cause such cheers?</p>
+<p>&quot;It seems they are quite popular.&quot;</p>
+<p>&quot;Well, that's because there is also Resistance's commander.
+For people it is like a coming of their saviour from demon's menace.
+Well, you can hear these high-pitched cheers.&quot;</p>
+<p>These loud cheers seems to be coming female population.
+To that Ashlan only shrugged.</p>
+<p>&quot;They are cheering commander, not army itself.
+That's our great leader.
+Young, excellent and as you can see quite popular.&quot;</p>
+<p>&quot;...<span title="jp. 霊光の騎士 It seems to be derived from her special equipment. 霊光 can be translated as Miracle Light">Light Knight</span>&quot; -
+muttered Saki.</p>
+<p>&quot;Symbol of hope that Urza Federation will be liberated.
+Though it is not only here in Urza.
+Even resistance in other regions acknowledges it.&quot;</p>
+<p>Getting closer to the crowd, you can see several soldiers in the same uniform as Saki and Ashlan.
+With the same coat of arms belonging to Resistance.</p>
+<p>&quot;So where is that commander?&quot;</p>
+<p>&quot;Look there, guy in the middle of crowd.
+You can recognize him by his knight like armour.
+Oh, it seems like he is coming here.&quot;</p>
+<p>Saki took a breath and continued with admiration in her voice.</p>
+<p>&quot;Jeanne-sama is really so cool!
+Despite being a man, his face is prettier than that of most girls here.
+Of course he would be popular.
+And his feminine name is not so bad.&quot;</p>
+<p><em>TL Note:</em> Yes you got it right, that's our cute osananajimi :D</p>
+<p>&quot;...Saki, what you said right now...?&quot;</p>
+<p>There is no mistake about it.
+Girl, near him, uttered that name:</p>
+<p>&quot;Jeanne-sama!&quot;</p>
+<p>&quot;We were awaiting your arrival!
+No abnormalities so far.
+We'll diligently continue our guard duty!&quot;</p>
+<p>Saki and Ashlan straightened their posture and saluted their commander in knight's armour, surrounded by citizens.</p>
+<p>&quot;Good work, I appreciate your efforts.&quot; - responded commander with beautiful smile.</p>
+<p>Commander is beautiful and young <em>man?</em> clad in heavy armour.
+Most likely around the same age as Kai.
+His gentle facial features gives off a very feminine aura.</p>
+<p>But as for Kai...</p>
+<p><em>The face looks like it is covered with make-up to make it look more boyish.</em></p>
+<p><em>And this armour, could it be to hide feminine slender figure?</em></p>
+<p>Voice too, feels like it is forced.
+And <em>his?</em> silver hair...
+Since it is quite long for a man, it is tied behind.
+This was just like during their childhood.
+Jeanne used to tie her hair like that since long hair caused troubles moving around and running.</p>
+<p>&quot;Jeanne?&quot;</p>
+<p>&quot;...&quot;</p>
+<p>Silver haired knight turned towards him, standing between Saki and Ashlan.
+Urza Resistance commander titled head, being puzzled.</p>
+<p>&quot;Oh, who could it be? I don't recognize him.&quot;</p>
+<p>&quot;We found him on surface and took under protection.
+His name is Kai.
+Not registered as resident of this city.&quot;</p>
+<p>&quot;He hit his head a bit so his memories are in disorder.
+But rest assured, Jeanne-sama, he is not bad guy.&quot;</p>
+<p>Saki and Ashlan gave quick response.
+To which Jeanne nodded in acknowledgement.</p>
+<p>&quot;I see, well then...&quot;</p>
+<p>&quot;Please wait, Jeanne, it's me!&quot;</p>
+<p>Kai pushed aside both them and shouted towards his childhood friend.</p>
+<p>Please let it be some sort of prank.
+World that is ruled by demons.
+Humans that now had to live in underground city.
+Saki and Ashlan who don't remember him at all.
+Could it be she is just playing a prank together with them?</p>
+<p>&quot;Just few moments ago we were doing shopping together!
+And since you were planning to depart to capital, you wanted to give some presents to us!
+Do you really remember nothing!?&quot;</p>
+<p>Seeing some noise, crowd became agitated.
+And not with sympathy towards him.
+They were giving a weird looks to a person of unknown origin, yet who dared to shout at the knight that was symbol of hope for mankind liberation.</p>
+<p>&quot;Forgive me.&quot; - said knight by the name Jeanne and shook his head.</p>
+<p>Pretending to be a man...
+Kai couldn't believe it.
+<em>TL Note:</em> Not sure about this line <code>男のフリをした────そうとしかカイには思えない裏声で</code></p>
+<p>&quot;Did we meet somewhere? I feel you mistook me for someone else&quot;</p>
+<p>&quot;...You really don't remember me...&quot;</p>
+<p>&quot;Pardon me, I have to attend to meeting with my subordinates afterwards.
+Saki, Ashlan, hear him out in my steed&quot;</p>
+<p>Surrounded by subordinates, Jeanne turns away from Kai.</p>
+<p><em>Really?</em></p>
+<p><em>Even Jeanne doesn't remember me?</em></p>
+<p>He really wished for it to be some kind of joke.
+Just a moments ago they were together.</p>
+<p>&quot;Jeanne!&quot;</p>
+<p>Kai bite his lips and kicked ground.
+He moved towards knight, who turned his back to him, despite being pushed back by knight's subordinates.</p>
+<p>&quot;Was your dream to become commander by pretending to be a man!?
+That cannot be right?
+You said yourself, that you want to surpass your father, as his daughter.
+Do you not remember even that?&quot;</p>
+<p><em>TL note:</em> the first sentence is a bit difficult so I tried my best to catch its meaning <code>お前……そんな男のフリして指導者顔して</code></p>
+<p>&quot;...!?&quot;</p>
+<p>He said in voice that could be only heard by Jeanne.
+And it seemed that Resistance's commander shoulders dropped down a bit...
+Or so it seemed to Kai.
+But in that instance.</p>
+<p>&quot;Bastard, what are you doing to Jeanne!&quot;</p>
+<p>&quot;Get away! Jeanne-sama, are you all right?&quot;</p>
+<p>Kai has been taken by shoulders and dragged away from Jeanne by her subordinates.</p>
+<p>&quot;H-hey, Kai, what are you doing!?&quot;</p>
+<p>&quot;You! Why you suddenly lunged toward Jeanne-sama...
+We're really sorry, Jeanne-sama.
+He is not bad guy, really!&quot;</p>
+<p>While being hold between Saki and Ashlan, Kai could only watch Resistance's Commander leaving with dumbfounded look on his face.</p>
+<hr />
+<p><a href="#Part2" id="Part2" class="Bookmark"></a></p>
+<p>Night has fallen upon Neo Vishal.
+In this underground city, the daylight has been replaced by lights from ceiling.
+And at the midnight, to match night from surface, city's lights were on only around roads.</p>
+<p>&quot;...&quot;</p>
+<p>At a certain hotel, in dimly lighted room.
+Key were sitting in front of desks full of various documents and maps, that he borrowed from Resistance with help of Saki and Ashlan.</p>
+<p>&quot;...How could it happen&quot;</p>
+<p>Before long, he became too tired to either sigh or even show a bitter smile. <em>TL Note:</em> weird original line <code>やがて。溜息とも苦笑ともつかない、疲労まじりの息がこぼれた。</code></p>
+<p>&quot;If this is a <em>general knowledge</em> of this world... Then history of this world is certainly different from what I remember&quot;</p>
+<p>In Kai's world history, humans won in Five Races Great War.
+But it was different here.</p>
+<p>&quot;We lost in Great War.
+And it happened just 30 years ago.&quot;</p>
+<p>But except for history, everything else matches Kai's memories, including continent geography.
+And the same could be said about people.
+Among citizens of this city Kai was able to find familiar names of his neighbourhood.
+Even currency that were used here, was the same as the one Kai got from his old world.</p>
+<p><em>There are some minor differences like Ashlan getting over his motion sickness.</em></p>
+<p><em>But other than that, people here are more or less how he remembered them.</em></p>
+<p>The only mystery is why both Kai and Prophet Sid have been forgotten.
+Both of them never ever existed in first place.
+As if they are erased from history.</p>
+<p>&quot;...Just why?&quot;</p>
+<p>It is understandable why Prophet Sid would cease to exist from this world.
+After all, human hero is the sole reason mankind won Great War.
+That he could understand.</p>
+<p>&quot;But why I no longer exist...!?&quot;</p>
+<p><em>TL Note:</em> I wonder if Kai really would love meet himself in this alternative world :D</p>
+<p>Even his friends from MDA are here.
+Yet despite that why he is the only one who has been forgotten?
+And what about his parents or relatives?
+Although he couldn't find their records in Neo Vishal, it is possible that they could escape to a different city.
+So for now he can be certain that only he and Prophet Sid are no longer exist.</p>
+<p>&quot;Are there any... clues?
+Since there is no Prophet Sid, mankind is now dominated by other races.
+Are there any other changes aside from that!?&quot;</p>
+<p>He continued to look through every history book and map.</p>
+<p>&quot;Urza Federation has been defeated by demon's hero.
+Obviously, since Sid is no longer here.
+Is there something else that differs from my memory!?
+Damn, even the graveyards are the same black pyramids.
+How about history of governing &lt;span title&quot;jp. 総督 It is more akin to governor-general&quot;&gt;generals</span>...&quot;</p>
+<p>In that instance he felt strange.
+After turning page, Kai felt that he should go to previous one.
+Urza Federation map.
+There was a photo of black pyramid.
+Demons graveyard.</p>
+<p><em>Wait a second, could it be I made mistake.</em></p>
+<p><em>I have feeling I overlooked something regarding this graveyard.</em></p>
+<p>&quot;Right! How I could forget about it!?&quot;</p>
+<p>Kai vigorously stood up from his chair.</p>
+<p>&quot;This graveyard... For <em>this world</em> existence of this thing is just weird!&quot;</p>
+<p>After winning Great War, mankind creates graveyards to seal away non-human races.
+But in this world we have been defeated.</p>
+<p>&quot;There is no Sid in this world... And despite the fact that we lost, these things are still there.&quot;</p>
+<p>If humans would lose, then no one would create graveyards to seal away non-human races.
+Isn't that a contradiction in this world's history?</p>
+<p>&quot;...&quot;</p>
+<p>Within dim lights, Kai bitten his lips.</p>
+<hr />
+<p><a href="#Part3" id="Part3" class="Bookmark"></a></p>
+<p>On next morning.
+Kai spread map before two of them, and they gave quick answer.</p>
+<p>&quot;Uhhh... graveyard? What's that? Never heard of it&quot;</p>
+<p>&quot;Same here, first time seeing it.
+What with this creepy triangular build..
+Guess demons made it, right?
+The guy who made this photo, most likely thought so too.&quot;</p>
+<p>&quot;...Ok, I see. Thanks.&quot;</p>
+<p>As expected, both Saki and Ashlan had no idea about graveyard.
+No matter how you look at it, it is strange that graveyard is still standing, despite humans losing Great War.
+It might be worthwhile to investigate it.</p>
+<p>&quot;Ashlan, are there any car available?&quot;</p>
+<p>&quot;M? Do you want me to take you somewher?
+But you do remember that main body of army came yesterday.
+For now both me and Saki got to attend meetings, so we cannot move out.&quot;</p>
+<p>&quot;I understand that.&quot; - said Kai and extend his hand toward Ashlan.</p>
+<p>&quot;I can go on my own, so lend me keys.
+If I'll go at highest speed, I'll be able come back by noon,
+so I want you to lend me Resistance's car.&quot;</p>
+<hr />
+<p><a href="#Part4" id="Part4" class="Bookmark"></a></p>
+<p>Graveyard's desert.
+In previous world, Kai were scouting this place together with Saki and Ashlan for year and a half.</p>
+<p>&quot;First time I'm coming here alone.&quot;</p>
+<p>Kai looked up from his armoured car.
+Among winds with sands was standing black pyramid.</p>
+<p>&quot;Demons occupied Urza's capital and placed patrols all over the place...&quot;</p>
+<p>The demons he encountered at 9th Terminal were part of these patrols.
+And on his way here, he often could catch sight of demons.
+With each encounter he had to take a detour, but finally he was able to arrive here.</p>
+<p>&quot;...Let's go.&quot;</p>
+<p>He finally came to this 200 meters tall building.
+Taking his drake nail, he took off from driver's seat.</p>
+<p>&quot;Entrance seems to fine. Well, that's to be expected.&quot;</p>
+<p>The sole entrance inside is through this door.
+And MDA is the only one who posses key to open it.</p>
+<p><em>I was able to enter once 10 years ago.</em></p>
+<p><em>When Jeanne's father was Urza's HQ chief, he allowed us to come together for a learning experience.</em></p>
+<p>Afterwards he fell into it.</p>
+<p>&quot;No, right now, it doesn't matter.&quot;</p>
+<p>He slowly walked over graveyard's perimeter.
+Under blazing sun, he felt pain all over his skin.
+With sweat all over his forehead, he moved towards graveyard's rear.
+And there Kai saw something unbelievable.</p>
+<p>&quot;The <span title="jp. 封鎖石 a bit unusure how to call it.">sealing stone</span>... is out of place!?&quot;</p>
+<p>The huge circular boulder has rolled down away from graveyard's walls.
+It was a special equipment that served as a barrier to prevent demons escape.
+Slightly greenish patterns were visible on its surface, which was proof of it being functional.</p>
+<p>&quot;For demons locked inside to remove this barrier and escape... That's impossible I guess.
+Besides if it would happen, I'd expect both Saki and Ashlan say that demons escaped from graveyard.&quot;</p>
+<p>It could be that sealing stone was left like that since no one sealed demons inside 100 years ago.
+If you think like that, it was sound.</p>
+<p>&quot;First time I'm entering from this entrance...&quot;</p>
+<p>He goes inside graveyard.
+Instead of front entrance, now he went through hole in rear that was blocked by sealing stone.
+And it is directly connected to the room where demons were sealed.
+Ten years ago when Kai fell inside at the bottom of it instead.</p>
+<p><em>TL Note:</em> to be honest the whole situation feels weird, because main entrance is kinda on ground level too, not sure how exactly he could even fall inside per se.</p>
+<p><em>But when I feel inside, I lost my consciousness almost immediately.</em></p>
+<p><em>And I woke up already outside of it.</em></p>
+<p>He remembered being surrounded by enormous horde of demons.
+And there he found Prophet Sid's legendary &quot;Shining sword&quot;
+But while trying to grab it... Kai lost his consciousness.</p>
+<p>Sunlight cannot reach graveyard's insides and as he enters, Kai feels chills down his spine.
+And further inside...</p>
+<p>&quot;What's that?&quot;</p>
+<p>There was light, coming from far away corner of passage.</p>
+<p><em>That light... what is it?</em></p>
+<p><em>It feels... nostalgic.</em></p>
+<p>Not even thinking about it, Kai run towards source of light.
+And further there was big open space...
+In the middle of it was shining sword, stuck into the ground.</p>
+<p>Legendary sword of Prophet Sid that he used to crush non-human races.
+But as there were no records left of his heroics, people came up with lots of fantasies about him.
+And this hero sword was once again before his eyes.</p>
+<p>&quot;...Sid's sword...?&quot;</p>
+<p>It is a sword whose light was on par with surface's sunlight.
+Capable of brightening the night.
+The Sid's sword that continued to shine like a sun.</p>
+<p><em>TL note:</em> I tired my best, but it is hard <code>それは、地上すべてにふりそそぐ太陽の光を凝縮したかのような剣だった。夜を照らす暁の色調──陽光色に輝き続けるシドの剣。</code></p>
+<p>It could be said that it looked as if God's halo.</p>
+<p><em>TL note:</em> Another weird thingy <code>喩えるならば神の後光とも言うべき神聖さ。</code></p>
+<p>And another wondrous thing about it is that the sword was transparent like a crystal.
+Even sword's grip and guard were transparent.</p>
+<p>&quot;...It's a real thing, right?&quot;</p>
+<p>Like he remembered 10 years ago.
+Hero sword actually existed.</p>
+<p>&quot;That's right! It is after all a real thing, Sid's legendary sword!&quot;</p>
+<p>Like 10 years ago Kai rushed toward sword in order to get hold of it.
+And then deep voice of old man resonated through whole graveyard.</p>
+<p><em>The one who were entangled by a hateful fate, do not let go of this sword.</em></p>
+<p><em><span title="jp. 世界座標 but I use its furigana">Code Holder</span>'s key...</em></p>
+<p>&quot;...Code Holder's key?&quot;</p>
+<p>Before Kai's eyes, shining sword risen slightly.
+From the tip of the sword a very dim light fired off, slicing the empty air and leaving tracks of light.
+The light took form of a door.
+And this door started to open.</p>
+<p>&quot;...Some...one... please...help...me...&quot;</p>
+<p>Now Kai heard a different from before voice.
+Barely he could hear a voice of young girl.
+At that moment the light door opened, and Kai started being pulled inside whirlpool of light.</p>
+<p>&quot;Ugh!? Hey... that voice, who are you!?&quot;</p>
+<p>While being pulled inside this light,
+Kai was certain that he heard some girl's voice.
+And then he shouted with all he got.</p>
+<p><em>I'm certain there is someone.</em></p>
+<p><em>That lamenting voice is asking for help.</em></p>
+<p>That's all he could understand.
+Kai, while holding hero's sword, went toward the place where <em>young girl</em> was waiting.</p>
+<p>When he realized, Kai found himself in the middle of sea of clouds.</p>
+<p>&quot;This is... not a graveyard?&quot;</p>
+<p>He looked around in all directions, but there was no trace of that gloomy graveyard.
+And the sky has been covered by sea of clouds.
+If one would compare, it could be said that this world has been covered by one big cotton blanket.
+And clouds were not only pure white, he could see all seven colours of rainbow.</p>
+<p>&quot;What is this place... And where is passage, I came from?&quot;</p>
+<p>Beneath his feet was infinite road made of stone.
+On it's sides were standing stone pillars few dozen meters tall.
+Something ancient were engraved on them.
+It looked almost like ancient temple.
+One could only wonder who would made such passage.</p>
+<p>&quot;Human work? Or maybe... Only foreign gods I guess.
+I remember that elves and dwarfs tend to build even greater buildings than we're.&quot;</p>
+<p>But this was demons graveyard.
+Foreign gods were sealed in a different place.
+Besides Kai could remember that ruins they left behind felt somewhat different.</p>
+<p>&quot;...Is this some special place made by demons?&quot;</p>
+<p>Holding to his Drake Nail, he started moving forward.
+To assert where this place ends, Kai ignored crossroads for now.</p>
+<p>How much time passed? One hour? Two hour?
+He kept walking further ahead until his senses haven't become numb.</p>
+<p><em>TL note:</em> I have some doubts about meaning of this last line, I wonder if author meant sense of time?</p>
+<p>&quot;That is?&quot;</p>
+<p>A towering figure entered his field of view.
+The place looked like some sort of altar.
+He ascended a small staircase with less than 10 steps.
+There before him was three solemn marble pillars, towering over surroundings as if reaching the sky itself.
+And in the center of it was...</p>
+<p>&quot;Girl?&quot;</p>
+<p>As if crucified, there was a girl bound to pillar.
+She looked as sacrifice in some sort of ritual.
+Both of her hands were tied by chains.
+There was a blond girl that were covered in chains up to her face</p>
+<p><em>TL Note:</em> The way she is described is a bit different from prologue where it was said that even her eyes were covered by chains</p>
+<p>&quot;...Is there... someone?&quot;</p>
+<p>Sensing Kai footsteps, the girl, that was bounded by chains, raised her head.
+She couldn't move her body due to chains.</p>
+<p>&quot;Please&quot;</p>
+<p>With hoarser voice she plead.</p>
+<p>&quot;...help me. Sever these chains...&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../1/world1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../1/world3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../1/world1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../1/world3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

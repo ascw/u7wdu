@@ -1,0 +1,589 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>World.6 Black Morning Star - Naze Boku no Sekai wo Dare mo Oboeteinainoka</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../text-style.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="../about.html"><strong aria-hidden="true">1.</strong> About</a></li><li><a href="../1/index.html"><strong aria-hidden="true">2.</strong> Volume 1</a></li><li><ol class="section"><li><a href="../1/prologue.html"><strong aria-hidden="true">2.1.</strong> Prologue [0]</a></li><li><a href="../1/world1.html"><strong aria-hidden="true">2.2.</strong> World.1 And so world has changed</a></li><li><a href="../1/world2.html"><strong aria-hidden="true">2.3.</strong> World.2 No one remembers me</a></li><li><a href="../1/world3.html"><strong aria-hidden="true">2.4.</strong> World.3 Rinne</a></li><li><a href="../1/world4.html"><strong aria-hidden="true">2.5.</strong> World.4 Saviour of humanity's salvation</a></li><li><a href="../1/world5.html"><strong aria-hidden="true">2.6.</strong> World.5 Tenma and young man</a></li><li><a href="../1/world6.html"><strong aria-hidden="true">2.7.</strong> World.6 Storing memory of the world -Code Holder-</a></li><li><a href="../1/epilogue.html"><strong aria-hidden="true">2.8.</strong> Epilogue Story of young man forgotten by world</a></li></ol></li><li><a href="../2/index.html"><strong aria-hidden="true">3.</strong> Volume 2</a></li><li><ol class="section"><li><a href="../2/world1.html"><strong aria-hidden="true">3.1.</strong> World.1 Night is over</a></li><li><a href="../2/world2.html"><strong aria-hidden="true">3.2.</strong> World.2 To the east of the world</a></li><li><a href="../2/world3.html"><strong aria-hidden="true">3.3.</strong> World.3 Io Resistance</a></li><li><a href="../2/intermission.html"><strong aria-hidden="true">3.4.</strong> Intermission Heartless Angel</a></li><li><a href="../2/world4.html"><strong aria-hidden="true">3.5.</strong> World.4 Elven Forest</a></li><li><a href="../2/world5.html"><strong aria-hidden="true">3.6.</strong> World.5 Heavens Purgatory</a></li><li><a href="../2/world6.html" class="active"><strong aria-hidden="true">3.7.</strong> World.6 Black Morning Star</a></li><li><a href="../2/epilogue.html"><strong aria-hidden="true">3.8.</strong> Epilogue The Last two</a></li><li><a href="../2/continued.html"><strong aria-hidden="true">3.9.</strong> Continued Last Hero</a></li></ol></li><li><a href="../3/index.html"><strong aria-hidden="true">4.</strong> Volume 3</a></li><li><ol class="section"><li><a href="../3/world1.html"><strong aria-hidden="true">4.1.</strong> World.1 To The South</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Naze Boku no Sekai wo Dare mo Oboeteinainoka</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="./midashi07.jpg" alt="Cover" /></p>
+<p><em>TL Note:</em> Morning Star is a more literal translation of Lucifer's name, the first fallen angel. Also the latin for Venus.</p>
+<p>Io's largest unexplored region - The Angel Palace.
+On the highest floor of the palace, in the [Azure True Heaven] hall, which had no walls or ceiling, was standing an altar exposed to the winds.
+In the place where in every direction one could see only the blue skies...</p>
+<p>&quot;Stop already, Alfreyja!&quot;</p>
+<p>The elven girl screamed with a hoarse voice.</p>
+<p>&quot;Thee... I cannot bear to see thee so empty!
+Thee has been only deceived by the monster.
+Come back to thy senses!&quot;</p>
+<p>It was a plea full of grief.
+Being swept by the winds, her words melted into nothingness.</p>
+<p>&quot;It's not too late now.
+We can still do it over.
+That's why...&quot;</p>
+<p>&quot;Get away, Reiren!&quot;</p>
+<p>Grabbing her by the nape of her neck, Jeanne jumped to the side.</p>
+<p>Magnificat [The Lord crushes your wings and you fall to the ground, lamenting one.]</p>
+<p>The air creaked with a thunderous roar.
+The floor exploded.
+The white metal floor broke into tiny pieces, and started falling down towards the sea of ancient trees far down below.
+If Jeanne were late even by an instant, the elven girl would have fallen down together with these debris.</p>
+<p>&quot;...Alfreyja. What is the meaning of this?&quot;</p>
+<p>Instead of the elven girl, who was kneeling on the floor, Kai cleared his throat and mustered the words:</p>
+<p>&quot;You, what was that just now?&quot;</p>
+<p>[...] <em>TL Note</em>: <em>This</em> Alfreyja's dialogues are in brackets.</p>
+<p>&quot;Where is your magic tool?
+Why can an angel like you use magic without a magic tool!?&quot;</p>
+<p>That was indeed the case.
+The angel, when receiving <em>Zero Code</em>, let go of all of his magic tools:</p>
+<p>The brass baton, capable of summoning blazing red sword.</p>
+<p>The silver baton, capable of calling forth rain of lightning.</p>
+<p>The trident, capable of destroying barriers.</p>
+<p>All of them were rolling around on the floor.
+Moreover, once attacked by Zero Code, his heavenly garments were torn into pieces.
+And then the fallen angel Alfreyja only swung down his left hand towards the Reiren.</p>
+<p>[This is your answer.]</p>
+<p>They heard the sound of metal crushing.
+The angel crushed the baton that was rolling under his foot.</p>
+<p>[By heaven's will, this is my power, as the shining morning star...]</p>
+<p>&quot;No!&quot; - the shrine maiden shouted.</p>
+<p>&quot;Awaken from thy delusion, Alfreyja!
+Look at thy wings on the back.
+Don't thee see that thy wings are crying?!&quot;</p>
+<p>The elven girl pointed at the angel's wings.
+The majestic and beautiful six pure white wings had faded, dried and withered.
+They were no longer capable of flying him in the skies.
+And there was a reason for that.</p>
+<p>&quot;Just by looking at how much weight thy cheeks lost, I can tell.
+Thy power didn't increase.
+Thee is just <em>borrowing it in advance</em>.
+Probably, thee is consuming a tremendous amount of magic power...&quot;</p>
+<p>Right now, the fallen angel was burning his magic power beyond any limit.
+If it were a car's engine, it would be overheating.
+And not being able to withstand it, his wings, which are closest to the organ producing magic power, are degrading.</p>
+<p>&quot;Thee is leaking magic power through thy wounded wings.
+Isn't that the reason why thee can use magic without assistance of magic tools?&quot;</p>
+<p>[...]</p>
+<p>&quot;Angels, elves and dwarves are all the same.
+Fairies might be a somewhat different case, but thee couldn't have forgotten wherefore we art united together (into a single race)?&quot;</p>
+<p>Although their bodies have an organ that can produce magic power, they have no means to release it.
+Therefore they cannot use magic.
+In this regard foreign gods are similar to humans.
+Due to that, they created magic tools to assist themselves in manipulating magic powers.</p>
+<p>&quot;Magic tool is what did start foreign gods.
+There is nothing to be ashamed about the magic tool, instead we shouldst be proud of it!
+Forgetting that, and being joyous about using magic without assistance of magic tool.
+Is that not a true disgrace to the foreign gods!&quot;</p>
+<p>[Silence.]</p>
+<p>Winds started to gather into a storm.
+Clouds among the blue skies started relentlessly whirling, condensing, and beneath the dark clouds something started to shine.</p>
+<p><em>Lightning.</em></p>
+<p><em>Is this a lightning attack like before!?</em></p>
+<p><span title="jp. 極大 a bit unsure as normally it means maximum">Powerful</span> lightning tore through the clouds.
+Without assistance of magic tools, he was able to display power beyond any limit.
+This alone certainly made the fallen angel to transcend the angels as a race.</p>
+<p>&quot;It might be threatening, but a single spell is not enough to gallow me!&quot;</p>
+<p>The elven girl put out her seven layered protective garments.
+The faintly shining silk garment received the lightning attack, aiming at her head.
+Regardless of how wide in scale the lightning is, Reiren's spirit garments are able to absorb seven magic attacks.</p>
+<p>&quot;Reiren, move back. Don't go out at the front!&quot;</p>
+<p>&quot;...Eh?&quot;</p>
+<p>There was the sound of tearing clothes.
+These spirit garments, the most prized treasure of the elves.
+Right in front of her eyes, the seventh coloured garment, which she was holding, was cut into halves.</p>
+<p>Magnificat [O my lord, my humble self is the Lord's proxy and judge.] <em>TL Note:</em> Too high level <code>我が王よ、汝は汝の主たる天の代行者にして審判者</code> and I'm not sure I can make sense out of it, because <code>汝</code> is usually  <code>you</code>, and here it makes a little sense?</p>
+<p>[Lord Sword Divine Gift.]</p>
+<p>It was a flamberge, whose hilt looked like the imitation of a wing.
+One could only wonder just when it had manifested.
+In the fallen angel's hand was a tightly grasped dark red coloured sword. Its colour made it look like it was soaked in blood.</p>
+<p>The lightning attack was just a distraction.
+By distracting the elven shrine maiden with enormous light, he was able to quickly approach her.
+And then he cut her magic tool with the sword.</p>
+<p>&quot;...I-impossible. For a magic sword... to pierce through my spirit garments...!&quot;</p>
+<p>The elf's shoulder was cut.
+The fallen angel's sword was already able to cut the elven girl's skin, covered by protective garments.
+Before their eyes was the terrible scene of emerald blood flowing from the girl's shoulder.</p>
+<p>&quot;Reiren!?&quot;</p>
+<p>Jeanne reflexively caught the falling down elven girl in her arms.</p>
+<p><em>TL TODO:</em> I'm a bit unsure what author means with <code>それが仇</code>, <code>仇</code> reads as <em>ada</em> and can mean various things like: ill intent, grudge or harm.</p>
+<p>[So foolish.]</p>
+<p>Jeanne screamed.
+While holding the elf, she was attacked by the fallen angel's sword.
+The knight's armour was cut like a thin paper, from her back to the side.</p>
+<p>[Do you wish to be cut down while protecting this elf?]</p>
+<p>&quot;...!&quot;</p>
+<p>Both the elf and the human fell to their knees.
+Both the girls, unable to muster a single word, were facing down towards the floor.</p>
+<p>[Disappear.]</p>
+<p>&quot;Alfreyja!&quot;</p>
+<p>Towards the angel with his dark bloody flamberge that wounded both the girls, Kai sent a vertical slash with his own sword.</p>
+<p>[Hou? Your sword...]</p>
+<p>While deflecting the sword, the fallen angel laughed.</p>
+<p>[I see it, now.]</p>
+<p>&quot;I get it, your flamberge...!&quot;</p>
+<p>Both the human and the fallen angel understood at the same time.
+The moment their swords crossed, they both caught a glimpse of each other's sword's power.</p>
+<p><em>His sword is without mistake a magic sword.</em></p>
+<p><em>But then, why it was able to pierce through Reiren's protective garments?</em></p>
+<p>The seven coloured garments served as a barrier,
+and was able to withstand up to 7 simultaneous magic attacks.
+Taking into consideration that it could even defend against wide area magic, its defensive powers were even above Code Holder.
+So it made him wonder how these spirit garments could get torn.</p>
+<p>&quot;Since it is a magic sword, it can be restored always!&quot;</p>
+<p>[This is the heaven's work.]</p>
+<p>The fallen angel had raised his sword high above his head.
+Lord Sword Divine Gift - Reiren's protective garment had functioned as usual, and was able to receive up to 7 blades.
+And each of the these 7 times Alfreyja's sword was destroyed.
+And then each time he had restored the sword.
+The eighth sword pierced through the spirit garment.</p>
+<p><em>TL Note:</em> Literally cheat. Well, Kai got his own cheat.</p>
+<p>[Human. Just what is your sword?]</p>
+<p>&quot;...&quot;</p>
+<p>[The moment our blades crossed, my sword was destroyed a hundred times.]</p>
+<p>As Code Holder and the fallen angel's sword crossed, even though only for a moment, the same phenomena repeated itself a hundred times.
+Kai's Code Holder [cut fate].
+In order to remove the fatal fate for Kai, Code Holder had destroyed the fallen angel's sword.
+But the fallen angel, who noticed it, had immediately restored the sword.
+It happened hundreds of times.
+The fallen angel was overflowing with magic power -
+It was a possible feat for him, precisely because he was burning through all of this magic power, to the extent that both his body and six wings had withered.</p>
+<p>&quot;Alfreyja.&quot;</p>
+<p>Aiming at the fallen angel he stomped the floor.
+Kai pressed on towards the angel who was recklessly overpowering himself beyond any limit.</p>
+<p>&quot;Reiren was really respecting you.&quot;</p>
+<p>[Obviously.]</p>
+<p>&quot;No, the real you would never say something like [obviously], am I not right?.
+Right now you are not the real you, but a simple avatar!&quot;</p>
+<p>[Nothing has changed. At least for humans!]</p>
+<p>They were locked into a sword fight.
+Both swords were flashing at an enormous speed.
+It continued for five minutes.
+While Alfreyja had advantage of height and strength, Kai was able to push back against him with his leg work.</p>
+<p>[...Are you on equals with me? Just how much strength resides in your thin arms.]</p>
+<p>&quot;Naturally. You might triumph in air, but fighting on the ground is just not for you!.&quot;</p>
+<p>Losing focus would immediately mean to be pushed back here.
+Gritting his teeth, he repelled the angel's sword with Code Holder.</p>
+<p><em>As I thought.</em></p>
+<p><em>Even if the opponent is an angel, if it is a sword fight, I can do it.</em></p>
+<p>In the first place for angels it is unheard of to swing swords on the ground.
+But that was the fallen angel's own choice.
+In order to wield enormous and powerful magic, he sacrificed his own wings.</p>
+<p>&quot;In the first place such a fight would have been impossible.
+Had you flown into the skies and started firing off your magic tools one-sidedly,
+I would have no means to oppose.&quot;</p>
+<p>[...]</p>
+<p>&quot;But now is my chance.
+In place of Io's humans and all of foreign gods I challenge you.
+With all of my spirit!&quot;</p>
+<p>[Huh!]</p>
+<p>He scorned.</p>
+<p>[All of foreign gods? I have no need for such weaklings!]</p>
+<p>Magic power started making noise in air.
+The fallen angel's sword that was clashing with Code Holder, started getting even more supply of magic power.
+Flamberge became a Zweihender.
+And to this blade...</p>
+<p>&quot;Slow.&quot;</p>
+<p>Kai's blade of sunlight colour, made a vertical slash towards the upper air.</p>
+<p><em>TL Note:</em> <code>はるか上空へと斬り上げた</code> A bit unsure how exactly it supposed to look</p>
+<p>[Impossible...]</p>
+<p>&quot;You have never swung something like a sword before.&quot;</p>
+<p>[...What?]</p>
+<p>&quot;And the proof is that you thought that a bigger sword is stronger.&quot;</p>
+<p>By increasing the length of blade, you can also somewhat increase the range of attack.
+But larger swords like Zweihender required a certain ability to be properly handled.</p>
+<p><em>If it were something like a familiar magic tool...</em></p>
+<p><em>Like that trident on the ground, it would have certainly been a different story.</em></p>
+<p>Kai never fooled around when it came to drills; he would not fall behind against enemies using unfamiliar weapons.
+This was the difference between talent and training alongside enthusiasm.
+For that reason he held a pride for not being defeated against the four race's heroes.</p>
+<p>[...]</p>
+<p>The fallen angel's expression was strained.
+Having superior sword skills and Code Holder, capable of cutting off magic, Kai held an advantage.
+As he was burning through surplus of magic power, a prolonged battle left Alfreyja at a disadvantage.</p>
+<p>[It seems it is time to deliver judgement for this life.]</p>
+<p>&quot;What?&quot;</p>
+<p>[Collapse.]</p>
+<p>The fallen angel said a single word.
+And his voice started spreading through the place...</p>
+<p>The Angel Palace shook.</p>
+<p>The floor, on which Kai was standing, started to tremble.
+He was wondering if the ground was rumbling.
+But they were high above in skies.
+Although tied to the top of ancient tree, it shouldn't be possible for vibrations on the earth to reach this place.</p>
+<p>[To destroy this life. The Angel Palace shall collapse.]</p>
+<p>Under his feet - a portion of the floor had fallen down.
+Kai lost his balance.</p>
+<p>[All of you useless bunch shall fall down to ground.]</p>
+<p>&quot;...Gu!?&quot; <em>TL Note</em>: <code>ぐっ!?</code> voice of struggle</p>
+<p>With his balance lost, Code Holder, that was unable to deflect the fallen angel's sword, fell down.
+The back of his hand was cut and blood was flowing from his right hand.
+Nevertheless he extended his left hand to try to reach Code Holder, which the fallen angel trampled with his foot.</p>
+<p><em>To go this far...</em></p>
+<p><em>For just me alone, he is seriously planning to destroy the angel palace.</em></p>
+<p>[Disappear, human.]</p>
+<p>Roaring lightning striked out of whirling dark clouds.
+For Kai who had let go of Code Holder, there was no way to defend against the incoming lighnting from the sky.
+The fallen angel believed it to be so.</p>
+<p>[Turn into dust.]</p>
+<p>But.
+The lightning strike from heaven didn't reach Kai in the end.</p>
+<p>&quot;...What, Vicious?&quot;</p>
+<p>There was Reiren, floating in sky.
+She was being held by battle angel Vicious, who had attacked them down below.</p>
+<p>&quot;Isn't it a bit late to come back to thy senses?&quot;</p>
+<p>&quot;...Alfreyja-sama.&quot;</p>
+<p>The subordinate angel saw it all.
+How her master changed.
+Choosing the wicked power and sacrificing his own wings.
+And then, for the sake of defeating a single human, this fallen angel chose to even collapse the angel palace.
+Therefore she came to the conclusion: to whom to give her aid.</p>
+<p>&quot;Seven ladies... Come fourth!&quot;</p>
+<p>Elven shrine maiden Reiren put up the torn spirit garments.
+The seven coloured garment absorbed and dissolved the lightning attack.
+Moreover, the wings of Viscous, who was carrying Reiren, supported the garment in places where it was torn.</p>
+<p>[You! Bastards...]</p>
+<p>&quot;Where are you looking.&quot;</p>
+<p>The chest of the fallen angel, who was glaring at Reiren, was pierced by a shining arrow.</p>
+<p>&quot;...Do not underestimate... Our stubbornness!&quot;</p>
+<p>Said the knight Jeanne who was kneeling down on one knee.
+Behind was her bodyguard Fairin, supporting her.
+And the knight fired the arrow with all of her strength.</p>
+<p>[Tch.]</p>
+<p>Fallen angel Alfreyja was taken aback.
+If it were heaven lord Alfreyja's barrier at full power, then the attack just now wouldn't be able to injure him.
+This was his price for devoting himself fully to magic attack power.</p>
+<p>[Think I'm done, inferior species!?]</p>
+<p>He roared.
+The overpowered angel was yet to fall.
+<em>ED note: Just what kind of overclocking is this lol.</em></p>
+<p>He was transforming all of his life force into magic power.
+In fact he was using so much power that his wings had completely withered. Yet, as he received Jeanne's attack his killing intent was only rising more.
+But, the fallen angel didn't notice.
+No, he had completely forgotten about it.</p>
+<p>&quot;Yeah, it is the end.&quot;</p>
+<p>There was a human very close to him.
+Alfreyja was trampling over Code Holder under his feet.
+And in Kai's hand was no sword, not to mention a gun or a knife.</p>
+<p>[You...?]</p>
+<p>Worthless human.</p>
+<p><em>TL Note:</em> This part is kinda weird <code>それでも瞬時に油断をぬぐい去ったのは</code>, I wish author would choose some better wording, because it is just misleading in it's sense.</p>
+<p>Nevertheless, likely due to angel Alfreyja natural strength, he had completely disregarded any notion of carefulness.
+He smashed in full force, with his mysterious sword.</p>
+<p>[You do not know when to give up. Just disappear!]</p>
+<p>The fallen angel's sword slashed through air.
+Kai bended over on the floor and narrowly avoided the bloody dark blade.
+As if like he had been told, Kai completely disappeared in front of fallen angel Alfreyja's eyes.</p>
+<p>&quot;Fallen angel. Now I'll turn your world upside down.&quot; <em>TL Note:</em> Needs more accurate translation <code>お前の天地をひっくり返す</code></p>
+<p>[...What!?]</p>
+<p>&quot;You have no way to defend against it.&quot;</p>
+<p>In order to challenge the four races, humans created this technique.
+Empty handed.
+In the true world, as Kai belonged to MDA, it was his duty to work on learning presumably anti four races martial arts.</p>
+<p>He made a kick attack.
+Putting all his strength into the kick and using <span title="It is karate technique I think">the edge of the foot</span>, he knocked both the legs of fallen angel Alfreyja at the same time.
+Tripping, angel fell down hitting the back of his head.
+Of course with such a sturdy body he had no injuries.
+But experiencing something like that for the first time was shocking for the angel.</p>
+<p>It was unthinkable for him.
+He couldn't comprehend just what caused him to fall down.</p>
+<p><em>Normally such a technique wouldn't work against heaven lord Alfreyja.</em></p>
+<p><em>After all, angels have wings.</em></p>
+<p>Once tripped, they could just remain afloat in air.
+But...</p>
+<p>Being an angel who lost his wings in exchange for power, he lost the skies.</p>
+<p>[...]</p>
+<p>For an angel, who was closest to the skies, being turned upside down like that was something unknown and Alfreyja wasn't able to react.
+He couldn't yet comprehend the shock of falling down on his back.
+And then, as his back knocked against floor, there was the vital organ of angels, that produced magic power.</p>
+<p>&quot;Choosing to <span title="jp. 堕天 fall as if choosing to become fallen angel as it means to lose wings">fall</span> was mistake that led you to defeat. Alfreyja...&quot;</p>
+<p>Kai strikes down with his fist.
+Receiving the fist by his breast, the shock went through his spine, reaching the magic producing organ.
+The six winged angel fell into silence.
+It was the end.</p>
+<p>The organ, that was producing magic power, was already close to it's limit.
+And with this attack it completely stopped functioning.
+He couldn't move.</p>
+<p>The motionless angel was lying down, facing up with open eyes.
+And then all of a sudden he burst out blood with intense coughing.</p>
+<p>&quot;Alfreyja-sama!?&quot;</p>
+<p>Battle angel Vicious dived in from above.
+Toward the subordinate that was trying to rush over to her master's place...</p>
+<p>&quot;...Go away... Vicious!&quot;</p>
+<p>It was a restrained voice. <em>TL note:</em> I'm not sure how author means it here <code>制止の声</code></p>
+<p>&quot;...Do not... approach... you must not!&quot;</p>
+<p>It was the voice of none other than the angel's leader himself.
+Facing up on his back, he could no longer move.
+His body had already exhausted magic power completely.
+With wings completely withered, his magic producing organ was falling apart.
+But even then, his voice held a certain strength.</p>
+<p>&quot;I, like that... no longer... hold any qualification to earn your respect...&quot;</p>
+<p>His words held strong will.</p>
+<p>&quot;And forgive me, my friend... I... had lost my mind...&quot;</p>
+<p>The Cross shattered.
+The blood red coffin broke apart and completely disappeared, releasing the elven elder.</p>
+<p>&quot;This place is already collapsing. Everyone, you must escape.. Make haste!&quot;</p>
+<p>The floor shook.
+The foundation of this hall had already collapsed and fallen down into the sea of ancient trees down below.</p>
+<p>&quot;Alfreyja-sama!?&quot;</p>
+<p>Meanwhile, a giant angel ran straight ahead towards his master side.</p>
+<p>&quot;My lord...!&quot;</p>
+<p>&quot;Archangel Raphael. I put you into quite a predicament...
+In my stead, I leave our comrades in your hands.
+Not only angels.
+Elves...
+Dwarves and fairies...
+Our alliance...&quot;</p>
+<p>Snap, it was sound of something breaking.
+Heaven lord Alfreyja petrified, and it was the sound of him starting to break.</p>
+<p>&quot;Alfreyja-sama!?&quot;</p>
+<p>&quot;This is all the result of my own fault.
+It is not the fault of these humans.
+Everyone, should know.&quot;</p>
+<p>Elven elder, and then battle angel and archangel.
+They turned their gaze one after another to shrine maiden Reiren, who had been crossing swords with him up until now.</p>
+<p><em>TL Note:</em> Check again <code>さらに、今まで刃を交えていたエルフの巫女レーレーンを目線で順に追いかけて。</code></p>
+<p>&quot;We ought to fight a different fight. And listen to me, human...!&quot;</p>
+<p>With already petrified throat, it was difficult for him to speak, yet the angel mustered his voice.
+To address Kai.</p>
+<p>&quot;The human, you've asked about.
+I... know about him.
+Even though I've been entrusted by Sid with this, what a mess it turned out to be.&quot;</p>
+<p>&quot;What do you mean! By Sid?&quot;</p>
+<p>It was the same as with Dark Empress Vanessa.
+Just before disappearing due to the Zero Code change, the other race's hero had remembered about Sid.
+It was quite a coincidence.</p>
+<p>&quot;Are you the same as Vanessa!? What do you know about world reincarnation?&quot;</p>
+<p>&quot;..It should exist. No, [it is supposed to exist]. So Sid said.&quot;</p>
+<p>The only question was what.
+What was this thing that [supposed to exist].</p>
+<p>&quot;Look for it!&quot;</p>
+<p>With his body crumbling, the foreign god's hero looked over his subordinates and took a short rest.</p>
+<p>&quot;As for World reincarnation, that rasterrizer is related to it.
+Summoning this creature...
+There is someone behind it.&quot;</p>
+<p>Still the Angel's gaze was fixed...
+On Kai, not looking away at all.</p>
+<p>&quot;I ought to <span title="jp. 認めるTo be honest I'm not sure what would be a right word to describe it, but basically he recognizes Kai as being worthy">approve of</span> you.&quot;</p>
+<p>&quot;Eh?&quot;</p>
+<p>&quot;I... saw... Your readiness to die in order to protect Reiren and challenge me.
+Even though you're enemies, you used your own body to to protect the elf.&quot;</p>
+<p>&quot;!&quot;</p>
+<p>Elven shrine maiden swallowed her breath.
+A human protected one of the foreign gods.
+It was something that originally would be unthinkable.
+But hearing Alfreyja's words made her self-consciousness about it.</p>
+<p>&quot;Who would think that a human will be the one to deliver our salvation...
+But, this is the will of the world.&quot;</p>
+<p>Foreign god's hero exhaled with certain vigour.</p>
+<p>&quot;All of us among foreign gods.
+We never forget friends and foes, and never shall we forget a debt of our brethren.
+Therefore, human, I can do nothing but to recognize you.
+And that's why...&quot;</p>
+<p>He closed his eyes.
+His strong body petrified, crumbling and turning into dust.</p>
+<p>&quot;I ask you, break the cycle of hatred in this world...!&quot;</p>
+<p>And then his body disappeared.
+These were the last words of the foreign god's hero.</p>
+<p>An hour later, Heaven Lord Alfreyja's fortress Angel Palace fell down and then disappeared.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../2/world5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../2/epilogue.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../2/world5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../2/epilogue.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>World.3 Rinne - Naze Boku no Sekai wo Dare mo Oboeteinainoka</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../text-style.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="../about.html"><strong aria-hidden="true">1.</strong> About</a></li><li><a href="../1/index.html"><strong aria-hidden="true">2.</strong> Volume 1</a></li><li><ol class="section"><li><a href="../1/prologue.html"><strong aria-hidden="true">2.1.</strong> Prologue [0]</a></li><li><a href="../1/world1.html"><strong aria-hidden="true">2.2.</strong> World.1 And so world has changed</a></li><li><a href="../1/world2.html"><strong aria-hidden="true">2.3.</strong> World.2 No one remembers me</a></li><li><a href="../1/world3.html" class="active"><strong aria-hidden="true">2.4.</strong> World.3 Rinne</a></li><li><a href="../1/world4.html"><strong aria-hidden="true">2.5.</strong> World.4 Saviour of humanity's salvation</a></li><li><a href="../1/world5.html"><strong aria-hidden="true">2.6.</strong> World.5 Tenma and young man</a></li><li><a href="../1/world6.html"><strong aria-hidden="true">2.7.</strong> World.6 Storing memory of the world -Code Holder-</a></li><li><a href="../1/epilogue.html"><strong aria-hidden="true">2.8.</strong> Epilogue Story of young man forgotten by world</a></li></ol></li><li><a href="../2/index.html"><strong aria-hidden="true">3.</strong> Volume 2</a></li><li><ol class="section"><li><a href="../2/world1.html"><strong aria-hidden="true">3.1.</strong> World.1 Night is over</a></li><li><a href="../2/world2.html"><strong aria-hidden="true">3.2.</strong> World.2 To the east of the world</a></li><li><a href="../2/world3.html"><strong aria-hidden="true">3.3.</strong> World.3 Io Resistance</a></li><li><a href="../2/intermission.html"><strong aria-hidden="true">3.4.</strong> Intermission Heartless Angel</a></li><li><a href="../2/world4.html"><strong aria-hidden="true">3.5.</strong> World.4 Elven Forest</a></li><li><a href="../2/world5.html"><strong aria-hidden="true">3.6.</strong> World.5 Heavens Purgatory</a></li><li><a href="../2/world6.html"><strong aria-hidden="true">3.7.</strong> World.6 Black Morning Star</a></li><li><a href="../2/epilogue.html"><strong aria-hidden="true">3.8.</strong> Epilogue The Last two</a></li><li><a href="../2/continued.html"><strong aria-hidden="true">3.9.</strong> Continued Last Hero</a></li></ol></li><li><a href="../3/index.html"><strong aria-hidden="true">4.</strong> Volume 3</a></li><li><ol class="section"><li><a href="../3/world1.html"><strong aria-hidden="true">4.1.</strong> World.1 To The South</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Naze Boku no Sekai wo Dare mo Oboeteinainoka</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="./midashi04.jpg" alt="Cover" /></p>
+<p>There was a blond girl, bound to a pillar.</p>
+<p>&quot;Please... Help...&quot;</p>
+<p>She pleaded with hoarser voice, that resembled a shriek.
+To her desperate plea, Kai could not utter even a single word in response.
+He was at loss.</p>
+<p><em>This girl...</em></p>
+<p><em>Definitely not human, but what exactly is her race!?</em></p>
+<p>On her back, wings could be seen.
+At their roots, her wings were black as colour of raven's feather.
+But as you go on, her feathers become pure white as snow.
+Gradients of black and white.
+Demon? Or is she angel specimen from cryptid race?
+<em>TL Note:</em> Wait, angels belong to cryptid race? Might be author weird mistake or maybe Kai is being mistaken?</p>
+<p>&quot;Angel or demon...&quot;</p>
+<p><span title="Sanskrit: Mara">Tenma</span>?
+There is no such race...
+But girl's wings makes it looks like a mix breed between angle and demon.</p>
+<p>&quot;...&quot;</p>
+<p>Chains jingle.
+At the sound of chains that were binding the girl, Kai - came back to his senses.</p>
+<p>&quot;You... who are... you?&quot;</p>
+<p>Thinking that her voice didn't reach since there was no response.
+She mustered in desperation to move her lips again.</p>
+<p>&quot;Who, you ask...&quot;</p>
+<p>Kai responded with strained voice.
+It was him who wanted to ask that.
+Just who was she to be here and in such horrible situation.</p>
+<p>&quot;...Rinne&quot;</p>
+<p>&quot;Rinne? Is that your name?&quot;</p>
+<p>&quot;...&quot; - she gave a nod in response.</p>
+<p><img src="./p089.jpg" alt="Rinne" /></p>
+<p><em>TL Note:</em> Well, illustration doesn't really reflect the actual scene it would seem.
+As she was supposed to be have her body bounded to pillar and covered in chains.</p>
+<p>&quot;Please.. He..lp...&quot;</p>
+<p>&quot;Hey!?&quot;</p>
+<p>Before girl could even finish, she fainted and her head hanged down.</p>
+<p><em>Helping her, huh? Guess she wants me to sever these chains.</em></p>
+<p><em>But asking me(human) to do that.</em></p>
+<p>There is a chance that he would be attacked once he'll get closer.
+It could be a trap after all.
+But Kai hesitated only for a few seconds.</p>
+<p>&quot;...Got it&quot;</p>
+<p>He felt the same pressure as when he faced the demon at 9th Terminal.
+But there was no malicious intent from this girl.
+Still, he finally found some clue about this place.
+Maybe she knows something about this place.</p>
+<p>&quot;I'm going to help you right now, but don't attack me.&quot;</p>
+<p>Kai looked over at girl and raised his Drake Nail.
+He aimed at chains that bound the girl, by the name Rinne, to pillar.
+And swung down with all of his strength.</p>
+<p>Sound of metallic clank could be heard.
+As the sound echoed through the place, Kai opened his eyes.</p>
+<p>&quot;It is this hard!? What kind of durability is that!?&quot;</p>
+<p>Despite these chains being no thicker than a finger, under the Drake Nail attack it didn't even had a single crack.</p>
+<p>&quot;Then...&quot;</p>
+<p>He placed his finger on trigger and swung bayonet downward.
+At the same time bright red spark appeared at chains and started to expand.</p>
+<p>Simplified Drake Bullet exploded.
+To avoid injuring the girl, he moved to the back of pillar and aimed at chains there.
+But, from a dense smoke emerged chains without a single crack on them.</p>
+<p>&quot;...Impossible...&quot;</p>
+<p>The explosive power that could bring down even demon, couldn't even scratch it.
+These chains, which looked so thin that even could be torn apart by his own hands, were so thick as if under spell.</p>
+<p>&quot;If it doesn't work, then how I'm supposed to do it...&quot;</p>
+<p>In Kai hands was only his bayonet.
+If it is not enough, then how he is going to destroy these chains?</p>
+<p>&quot;...Wait a sec. There was this voice before.&quot;</p>
+<p>At that time inside graveyard, aside from Rinne's he heard some other voice of old man.
+That voice said to not let go of sword.
+That's sword name is...</p>
+<p>&quot;Code Holder?&quot;</p>
+<p><em>TL Note:</em> jp. <code>世界座標の鍵</code> I'm still not sure if furigana Code Holder is for <code>鍵</code> part too, but for now I decided to omit it anyway.</p>
+<p>In that instance.
+The bayonet in his right hand, started to shine like a sun.</p>
+<p>&quot;Hot!?... This is!?&quot;</p>
+<p>Drake Nail started to emit light.
+It's dark blade become semi-transparent.
+Both gun parts and guard of his sword too somehow transformed into Sid's sword which he saw in graveyard.</p>
+<p><em>As if responding to sword's name, it transformed.</em></p>
+<p>And after it settled down.
+In Kai's hand was Shining Sword.
+This semi-transparent blade looked as beautiful as most expensive jewel.
+And also like a big <span title="Guess we know why it is Code Holder's key, but I'll continue omitting key part for now">key</span>.
+If Drake Nail couldn't even scratch these chains, then how about this hero's sword...?</p>
+<p>&quot;Please!&quot;</p>
+<p>He swung down Code Holder.
+Sound of metallic clank could be heard.
+With the sound of bells ringing, the fragments of chains fell down.
+Dazzling <span title="I guess it means the line left by swing?">line</span> severed chains that bound girl.
+Winged girl was falling down.</p>
+<p>&quot;...&quot;</p>
+<p>&quot;Hey...!? What happened? Where is this place? Who is this girl?&quot;</p>
+<p>Kai grabbed the falling girl who lost her consciousness.
+Her body was surprisingly light.
+And as his hands touched her bare skin, he become almost flustered.
+He decided to lay her on floor.</p>
+<p>&quot;This girl ears&quot; - He looked at her again and noticed - &quot;are elf's&quot;</p>
+<p>Under her silky golder hair could be seen ears that were a bit rounded like that of humans.</p>
+<p><em>Elf's ears? No, If memory serves right they should be longer.</em></p>
+<p><em>It feels like something between elf's and human's</em></p>
+<p>She had elf ears, and then on her back were wings like that of angel and demon.</p>
+<p>&quot;She has features of elves and angels which belong to foreign gods I think.
+Then she is half between demons and foreign gods?
+Still, other than she looks like a human...&quot;</p>
+<p>Yes, surprisingly the fallen winged girl looks like a human.
+She has lovely and charming appearance, with cute cheeks and small lips.
+He can also feel allure of young girl from her.
+Her chest, which moves up and down with each breath, is surprisingly stands out for her delicate figure.
+Back of her white clothes has curve that shows her wast.
+If it wouldn't be for wings, one would think she is 16 years old young girl.
+To add, she had mysterious charm.</p>
+<p><em>TL Note:</em> I must say, author description of girls is sometimes quite weird in their details.</p>
+<p>&quot;Is she a mix between human, foreign gods and demons? No... That's impossible&quot;</p>
+<p>There were no cases of children being born from parents of different races.
+Then, what about this girl Rinne?</p>
+<p>&quot;...Ugh...Ugh...&quot;</p>
+<p>Her body started moving and her shoulders slightly shake.
+Afterwards, her closed eyes started slowly opening.
+The pair of eyes, that were looking at him, had colour of deep green, just like jewel.</p>
+<p>&quot;Hey... Did you wake up?&quot;</p>
+<p>&quot;....&quot;</p>
+<p>Her eyes were wide open.
+Surprisingly, the girl stood up with angry expression on her face.</p>
+<p>&quot;Vanessaaaaaaaaaaaaaaaa!
+How dare you to lock me up
+I still haven't lost to you!&quot;</p>
+<p>Girl's wings spread her things and pointed towards Kai.
+She looked like she was preparing to fight.</p>
+<p>&quot;Do you think such weak pawn of yours could stop me!?
+Don't joke with me!
+Stop hiding and shows yourself, Vanessa!
+Aren't you demon's hero!&quot;</p>
+<p>&quot;Eh!? Wait a bit!&quot;</p>
+<p>&quot;Real fight starts now!&quot;</p>
+<p>The girl shouted the name of Dark Empress Vanessa.
+The name of demon who ruined Federation's cities.</p>
+<p><em>She has grudge against demons...</em></p>
+<p><em>But why she points her anger towards me!?</em></p>
+<p>&quot;Wait, it is misunderstanding! I'm not demon, in first place you...&quot;</p>
+<p>&quot;Shut up!Shut up! Bring Vanessa here right now!&quot;</p>
+<p>She violently shakes her neck and rises both of her hands.
+From palms of her hands, circular patterns of various colours starts shining.</p>
+<p>&quot;Magic!?&quot;</p>
+<p>But what is this exactly.
+It is different from magic of various races.
+In case of demons its colour would be black or purple.
+And both elves and angels would have white colour.
+At least that is what been known from Great War records.
+But what is this mix of dozens, no, hundreds of colours on top of each other.</p>
+<p>&quot;Lowly demon, such as you, is not a worthy enemy for me!&quot;</p>
+<p>Light of this magic started fired off.</p>
+<p>&quot;Ugh... Elf bullet...&quot;</p>
+<p>Kai prepared his bayonet, but then he froze still.
+Drake Nail started changing into Sid's sword.
+Aside from <em>simplified elf bullet</em>, that was stored in his bayonet, he had no means to oppose this magic.
+Magic's light filled his vision.
+And in that moment...</p>
+<p>&quot;Code holder severs the <em>Fate</em>. Now, cut fate of meaningless deaths out of the world.&quot;</p>
+<p>To his surprise, gentle female voice could be heard from the sword.</p>
+<p>&quot;Ugh!&quot;</p>
+<p>There was no time to ask questions, so he swung Code Holder.
+Sid's sword.
+The shining sword cut in half Rinne's colourful magic.</p>
+<p>Like with a sound of ringing bells magic has vanished.
+As if it was a dream, sparks of her magic disappeared one by one entirely.</p>
+<p>&quot;...Magic vanished?&quot; - said Kai who swung the Sid's sword himself.</p>
+<p>Sword that can cut magic.
+Any magic that is directly hit, as if it wasn't even there in first place, vanishes.</p>
+<p>And then the girl who fired the magic:
+&quot;...Impossible.&quot;</p>
+<p>Rinne was standing still in shock.
+Kai looked over Code Holder in his hand.</p>
+<p>&quot;What was that!? Since when you damn demons use such weapons!&quot;</p>
+<p>&quot;I told you already, I'm not demon&quot;</p>
+<p>&quot;Eh?&quot;</p>
+<p>&quot;Completely lost your sense and couldn't even hear me...?
+Look, I'm human, don't you see?
+No demon's wings or tails.&quot;</p>
+<p>He spread both of his hands to show it.
+It seems all of her anger started to fade.</p>
+<p>&quot;I helped you, so I'd hope you understand that I'm at least not your enemy.&quot;</p>
+<p>&quot;...You, helped me?&quot;</p>
+<p>&quot;Who else you think? There are no one here except us.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>She started folding back her wings.
+Now Kai wings were almost no longer visible, which he interpreted as her no longer being hostile.</p>
+<p>&quot;I'm sorry, due to my grudge against demons...&quot;</p>
+<p>She started to apologise with shivering voice.
+But quickly girl groaned and fall to her knees.</p>
+<p>&quot;Are you <span title="jp. 眩しい which is dazzling, but I assume it means being dizzy from light">dizzy</span>...?&quot;</p>
+<p>&quot;Yeah. Since I've been unconsciousness until now and seeing bright <span title="I'm a bit unsure if 光を浴びたcould mean that she used magic in metaphorical sense">light</span>.&quot; - answered Rinne who moved her hand up to gesture towards her forehead.</p>
+<p>She is definitely not human, but that gesture was so human-like.</p>
+<p>&quot;Before you mentioned Vanessa, did you mean demon's hero?&quot;</p>
+<p>&quot;...&quot; - Rinne gave a nod.</p>
+<p>&quot;She is the one responsible for locking me up here.
+That's why I thought here would be only her underling.&quot;</p>
+<p>&quot;And just where you saw a demon in me?&quot;</p>
+<p>&quot;I had no idea! I...am different from other races, so I was bit uneasy&quot;</p>
+<p>Saying that, Rinne's wings became so small that were hidden behind her golden hair.</p>
+<p>&quot;If you're different, does it mean you're not demon?&quot;</p>
+<p>&quot;Tenma...&quot;</p>
+<p>Coincidently, the name, Rinne gave, was the one that came to Kai's mind.</p>
+<p>&quot;...is what they call it&quot;</p>
+<p>&quot;That sounds like, it actually has different name&quot;</p>
+<p>&quot;Isn't it fine!? Race doesn't really matter, ok?&quot;</p>
+<p>Rinne shouted.
+She doesn't want to touch this subject.
+As if she was thinking so, pupils of her eyes were quickly moving.</p>
+<p>&quot;Allow me to thank you for saving me.
+And I'm sorry for attacking you.
+But about race... I'm not going to talk.
+This is not a pleasant subject for me.&quot;</p>
+<p>&quot;I understand&quot;</p>
+<p>&quot;I'm glad to hear it&quot;</p>
+<p>Her response felt as overly polite.
+But seeing her relaxed face, made Kai think that she was being honest here.</p>
+<p>&quot;Hey, human, you're...?&quot;</p>
+<p>&quot;Kai&quot;</p>
+<p>Trying to not show a bitter smile, Kai gave her name.
+Certainly it is his race, but he finds it difficult to be called like that.</p>
+<p>&quot;I'm not used to be called human&quot;</p>
+<p>&quot;...I'm Rinne&quot;</p>
+<p>Seems like she doesn't remember giving her name already when she was bound by chains.
+And introduces herself once again.</p>
+<p>&quot;There is something I'd like to ask.
+Where are we right now?
+You mentioned that you fought with demon's hero.
+And then got locked up here.&quot;</p>
+<p>&quot;Yeah, but I don't know where we are exactly.&quot;</p>
+<p>Rinne looked behind her at the pillar where she has been bound until recently.
+And then, as if being vigilant against something, she looked around.</p>
+<p>&quot;I had one-to-one fight with Vanessa, and then I've been locked up here...&quot;</p>
+<p>&quot;One-to-one!?&quot;</p>
+<p>Rinne said something unbelievable.</p>
+<p><em>Her opponent was demon's hero, wasn't it?</em></p>
+<p><em>Not only fighting against such opponent, but even surviving is quite unbelievable.</em></p>
+<p>In addition to being locked up here, she also has wings of demon and angel.
+Considering she doesn't like talking about her race, it is not difficult to imagine that Rinne is quite special existence.</p>
+<p>&quot;...Could it be, you're pretty strong?&quot;</p>
+<p>&quot;<span title="I'm not even going bother to translate various sounds from japanese">Fufufu</span>, am I not cool?&quot;</p>
+<p>Rinne puffed up her chest with pride.</p>
+<p>&quot;I'm pretty strong.
+I can single handedly deal with big group of demons, if there is no strong ones among them&quot;</p>
+<p><em>TL note:</em> Let's be real, that's not actually all that impressive.</p>
+<p>&quot;So you used this strength in your merciless attack against me?&quot;</p>
+<p>&quot;Didn't I already apologise for it!?
+Really, it was just misunderstanding.&quot;</p>
+<p>Both her face and ears became red.
+Her elvish ears bounced sideways, likely because she is upset.</p>
+<p><em>TL Note:</em> Don't really get this part about her ears: <code>エルフに似た耳がぴょこんと横に跳ねたのは</code></p>
+<p>&quot;But that was really dangerous.
+I thought you were Vanessa's underling so went all out.
+I'm glad you were able to defend against it.&quot;</p>
+<p>&quot;What would happen if I wouldn't be able...?&quot;</p>
+<p>&quot;Well, you'd be minced in like hundred small pieces...&quot;</p>
+<p>&quot;Isn't that overkill!?&quot;</p>
+<p>&quot;Hey, hey, but how you were able to defend yourself against my magic?&quot;</p>
+<p>&quot;M? Well, truth to be told I'm not sure myself, but...&quot;</p>
+<p>He glanced at hero's sword.
+It is believed that once Prophet Sid thought with this sword in Great War.</p>
+<p><em>I always wondered how exactly single sword was enough to challenge four heroes...</em></p>
+<p><em>Guess I got my answer just now.</em></p>
+<p>Sword's voice said to use it to cut <em>Fate</em>.
+And with that he cut down Rinne's magic <em>fate</em> of killing him.
+It is certainly unbelievable, but there were already so many strange and abnormal things going on...
+There is no choice but to accept this as it is.</p>
+<p>&quot;I think this sword...&quot;</p>
+<p>&quot;Yeah, this sword...?&quot;</p>
+<p>Behind the Rinne who were nodding in encouragement.
+Out of nowhere dark whirlpool appeared in air.
+And it started to expand.
+From there <em>something</em> appeared.</p>
+<p>&quot;<span title="jp. 運命特異体 - not sure how to say it better. Btw it refers to Rinne">Fate idiosyncratic body</span> ■■■ is awakening. Risk to New World is estimated as the highest.&quot;</p>
+<p>&quot;Initiating sealing process with <span title="jp. 切除器官 but furigana is ラスタライザ">rasterrizer</span>...&quot;</p>
+<p>The girl, whose body is covered with various cracks just like that of ravaged marionette, appears.
+Her appearance resembles that of human.
+But on her right shoulder is tentacle that resembles body of snake.
+And on her back could be seen skeletal wings.
+While her face feels quite similar to Rinne, she is different from Rinne.</p>
+<p><em>She is different from Rinne...</em></p>
+<p><em>What is this shivering feeling?</em></p>
+<p>Even holding Code Holder, he couldn't suppress his shaking hand.</p>
+<p>&quot;This thing!&quot;</p>
+<p>Rinne raised her voice and jumped away.</p>
+<p>&quot;This thing... appeared when I've been fighting with Vanessa.
+And then it locked me up here.&quot;</p>
+<p>&quot;Then it is demon?&quot;</p>
+<p>If it is Vanessa's servant then it is without doubts a demon... But was it really so?
+If this monster serves Vanessa, it is strange that there were no information on it in their records.</p>
+<p>&quot;Let's run! There!&quot;</p>
+<p>Rinne made a quick decision.
+She beckoned him towards back of three pillars and they run towards it.</p>
+<p>&quot;I've been dragged here from the back of altar.
+There should hole...&quot;</p>
+<p>But then shadow appears over Rinne's head.</p>
+<p>&quot;Rinne! Above!&quot;</p>
+<p>&quot;...Eh?&quot;</p>
+<p>There appeared another black whirlpool.
+From it monster's right tentacle emerged with terrific speed.
+Before she could even react, she has been caught by it.</p>
+<p>&quot;Fate idiosyncratic body ■■■ is captured&quot;</p>
+<p>Girl's scream echoed through the place.</p>
+<p>&quot;Commencing <span title="jp. 無座標化 but I use its furigana">Zero Code</span>&quot;</p>
+<p><em>TL Note:</em> Check following section with original</p>
+<p>Myriads of black whirlpools appear.
+Hundreds, thousands of mini black holes, that were used by monster, appear.
+Instantly they all follow towards Rinne.
+Then they start erasing her.
+Her body, as if being rubbed by eraser, starts disappearing.</p>
+<p>&quot;Ah... AH!? No... Nooo!&quot;</p>
+<p>Rinne moved her hand towards Kai, as if asking to save her.
+But soon enough her hand were covered by this black whirlpools and disappeared.
+If it remains like that, her body will completely disappear, just before his eyes.</p>
+<p>&quot;...Don't joke with me!&quot;</p>
+<p>His anger surpassed all of his fear.</p>
+<p><em>In this ridiculous world...</em></p>
+<p><em>Right before my eyes is real monster... But so what!</em></p>
+<p>There he had hero's sword.
+And Kai himself desperately trained for the day when he'll have to face powerful non-human enemy.
+Regardless of what kind of enemy it is, he only have to fight.
+It is only natural yet he...
+He was only angry at his weak self cowering in fear.</p>
+<p>&quot;I'll stop you myself!&quot;</p>
+<p>He tightly gripped his shining sword.</p>
+<p>&quot;Sid, I'll borrow your sword!&quot;</p>
+<p>Kai readied his shining blade, and aimed his swing at monster's tentacle that captured Rinne.
+...Free Rinne!
+Flash.
+Like clouds, black whirlpools started moving away.</p>
+<p>&quot;.....!?&quot; <em>TL Note:</em> Monster surprise</p>
+<p>The monster, whose tentacle has been cut off, staggered.</p>
+<p>&quot;Code Holder... World's will... Forbidden's sword... Why here...!?&quot;</p>
+<p>&quot;Here, Rinne!&quot;</p>
+<p>Kai pulled her in, without waiting.</p>
+<p>&quot;Can you run?&quot;</p>
+<p>&quot;...I-I'm fine!&quot;</p>
+<p>&quot;Let's go then! We don't need to deal with such monster!&quot;</p>
+<p>While holding her hand, Kai dashed towards back of the altar.
+Towards where Rinne pointed previously.
+There was...</p>
+<p>&quot;Here it is!&quot;</p>
+<p>Rift of light.
+Kai and Rinne jumped into this floating door.</p>
+<hr />
+<p><a href="#Part2" id="Part2" class="Bookmark"></a></p>
+<p>Demon's graveyard.
+In a blink of the moment, Kai found himself standing in dim halls.</p>
+<p>&quot;Hu..h... We escaped...?&quot;</p>
+<p>Will this strange monster follow us?
+There is no sign of its appearance.
+In this quiet darkness, only Kai and Rinne rough breathing could be heard.</p>
+<p>&quot;Rinne?&quot;</p>
+<p>She was laying down unmoving, or so he thought when...</p>
+<p>&quot;....!&quot;</p>
+<p>Rinne jumped and hugged crouching Kai.</p>
+<p>&quot;....It was scary... my...body...it was chilling...&quot;</p>
+<p>She was almost crying.
+Rinne was shaking while clinging onto Kai's neck.</p>
+<p>&quot;Really... It was really...So...Scary...&quot;</p>
+<p>&quot;...&quot;</p>
+<p>&quot;...I'm...Not...Lying...&quot;</p>
+<p>&quot;Yeah, Same here. I too felt it was quite dangerous.&quot;</p>
+<p>Kai put his hands on clinging girl's back.
+Couldn't blame her for it.
+Being attacked by such monster.
+If by any chance he would be few seconds late, Kai couldn't imagine what would happen.
+Being shaken by it was only natural.</p>
+<p>&quot;Let's rest for now. Until you'll calm down.&quot;</p>
+<p>Rinne remained silent.
+She responded with a nod, and her hands, that were clinging onto him, tightly grasped with even more strength.</p>
+<p>&quot;...Warm...&quot;</p>
+<p>She muttered eventually.</p>
+<p>&quot;Mm?&quot;</p>
+<p>&quot;It is first time... Something like that happened to me...&quot;</p>
+<p>He guessed that she means feeling another's body warmth.
+But regardless he decided to ask.</p>
+<p>&quot;Friends?&quot;</p>
+<p>&quot;No such thing.&quot;</p>
+<p>Her response was pretty short.</p>
+<p>&quot;I always... been alone...
+Friends... Parents... Nothing, I never had anything like that.
+Before I became aware, I've been alone&quot;</p>
+<p>&quot;...&quot;</p>
+<p><em>Being alone in this world.</em></p>
+<p>Kai frown hearing Rinne's words.
+He already experienced on his own.
+The pain that she felt, he felt it too.</p>
+<p><em>TL Note:</em> A bit weird one <code>この少女の苦しみが痛いほどに伝わってきたからだ</code>, not sure if I understood it correctly.</p>
+<p><em>What a <span title="jp.皮肉 pretty sure it is not correct word to use here, but author used it">irony</span>?</em></p>
+<p><em>I'm not the only one.</em></p>
+<p>Being cast aside by the whole world.
+Who would expect to meet someone, who shared this pain, here.</p>
+<p>&quot;I... Have no idea about my own race.
+That's why I've been always alone.
+Because foreign gods, spirits and cryptids, all say: you're different.&quot;</p>
+<p>&quot;Demons too?&quot;</p>
+<p>&quot;They are most cruel.
+Disgusting hybrid is what they call me.
+And there is no way we could have common ground.
+So I had a quarrel with demons.&quot;</p>
+<p>Which led to fight, eventually one-to-one against Vanessa.
+This is more or less sums up her history up to now.</p>
+<p>&quot;I'm the same.&quot;</p>
+<p>Hearing that, Rinne, who were embracing him, looked up.</p>
+<p>&quot;Kai too? But you're human, aren't you? There are lots of humans out there.&quot;</p>
+<p>&quot;There are no people I know.
+I've been left alone.
+So it is kinda similar.&quot;</p>
+<p>His childhood friend Jeanne, his colleagues Saki and Ashlan.
+All have forgotten about him.
+In this world, his whole existence disappeared.</p>
+<p>&quot;...Left alone? Did they all die?&quot;</p>
+<p>&quot;No, no, they are doing good.
+It is just, no one remembers me.
+Well... Maybe it is me who became strange.&quot;</p>
+<p>&quot;What do you mean?
+Kai is pretty normal, no?&quot;</p>
+<p>&quot;Well, If I'll say it, you're going to laugh.&quot;</p>
+<p>&quot;I'm not going though?&quot;</p>
+<p>Rinne, who were embracing him.</p>
+<p>&quot;I'm not going laugh at you, Kai. Because you didn't laugh at me too.&quot;</p>
+<p>&quot;...I don't believe that mankind lost.&quot;</p>
+<p>Kai shook his head and continued.</p>
+<p>&quot;I remember it perfectly well.
+Humans were the one who won Five Races Great War.
+But I would never think that history would suddenly change.
+Now humans lost.
+Instead of humans, our cities are now occupied by demons.&quot;</p>
+<p>&quot;Eh? Wait, Kai.&quot;</p>
+<p>Rinne stopped embracing him.</p>
+<p>&quot;What is going on? Demons are doing as they please...&quot;</p>
+<p>&quot;M?&quot;</p>
+<p>&quot;When I've been fighting Vanessa, nothing like that were happening...&quot;</p>
+<p>&quot;What do you mean?&quot;</p>
+<p>&quot;I mean demons occupying human cities.
+Never heard about it happening.&quot;</p>
+<p>She were spacing out in silence until some idea hasn't come to her.</p>
+<p>&quot;I think I remember it more or less like you.
+Just before my fight with Vanessa, humans should have won in Great War, I think.&quot;</p>
+<p>&quot;How so!?&quot;</p>
+<p>&quot;Because of human hero... I think. Well, Kai should know more about it, I think?&quot;</p>
+<p>Unbelievable.
+Who would think that he would think such talk from Rinne, who was even of different race.</p>
+<p>&quot;Among humans appeared someone really strong.
+Even demons were wary against human hero...&quot;</p>
+<p>&quot;You know about Sid!?&quot;</p>
+<p>&quot;Kya!&quot;</p>
+<p>Kai were holding Rinne now.</p>
+<p>&quot;Rinne, did you see Sid!?&quot;</p>
+<p>&quot;Wa-wait Kai... Don't know him.
+Never was interested in humans.&quot;</p>
+<p>&quot;Ah... Yeah I guess it is also true.&quot;</p>
+<p>But in this world, both Saki and Ashlan said that no human hero exist.
+So then Rinne, who knows about him, should be from the same world as him.
+There is proof that his memory of history is not wrong.</p>
+<p>&quot;Kai?&quot;</p>
+<p>&quot;...I'm glad...&quot;</p>
+<p>He moved his hands from Rinne and looked at ceiling.
+Kai was relieved, his memories are not wrong.
+There is a person who knows about the same history as he, himself.
+Finally he was able to meet her.
+In this absurd situation where humans lost war and demons occupied their cities.
+Finally he was able to find at least one person.
+Comrade who could understand pain of his solitude.</p>
+<p><em>TL note:</em> I'm pretty sure she doesn't give a shit about humans losing war though... But oh well, let guy to dream :0</p>
+<p>&quot;Kai? What are you glad about?&quot;</p>
+<p>&quot;We're comrades, comrades who share the same memory.&quot;</p>
+<p>&quot;...Comrades?&quot;</p>
+<p>She seemed lost at what to do.
+Not surprising.
+Until now she never saw her parents or the same kind.
+And then suddenly meeting human who calls her a <em>comrade</em>.
+It wouldn't be surprising being confused with just that.</p>
+<p>&quot;I'm relieved.
+Just as you've been saved, Rinne,
+your embrace saved me too.&quot;</p>
+<p><em>TL Note:</em> This is weird, I'm not sure about it's correctness <code>ほっとしたってこと。さっきリンネが、助かったって俺に抱きついてきたのと同じ</code>.</p>
+<p>&quot;...Is that so?&quot;</p>
+<p>&quot;Yeah, it seems now both of us are no longer alone.&quot;</p>
+<p>Prophet Sid exists.
+And the history where Sid brings victory in Great War is not wrong.
+Even if all humans forgot truth, both he and Rinne knows correct history.
+Comrades that share the same memories.&quot;</p>
+<p>&quot;...I'm no longer alone?&quot;</p>
+<p>&quot;I'm here now. Not sure how reliable am I, though.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>Rinne starts staring at Kai.
+While crawling, she suddenly brings her face closer.</p>
+<p>&quot;...What is it?&quot;</p>
+<p>&quot;You're the first to say such thing to me.&quot;</p>
+<p>&quot;I'm the same, it is first time I said such thing.&quot;</p>
+<p>&quot;I see...&quot;</p>
+<p>Saying so, Rinne smiled.</p>
+<p>&quot;Then, we're together, right?&quot;</p>
+<p>For her it was first time to show smile, so it was clumsy.</p>
+<p><em>TL Note:</em> I think Kai just grabbed 99% of her flags, not even being aware of it.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../1/world2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../1/world4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../1/world2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../1/world4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

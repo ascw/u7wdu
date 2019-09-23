@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>World.6 Storing memory of the world -Code Holder- - Naze Boku no Sekai wo Dare mo Oboeteinainoka</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../text-style.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="../about.html"><strong aria-hidden="true">1.</strong> About</a></li><li><a href="../1/index.html"><strong aria-hidden="true">2.</strong> Volume 1</a></li><li><ol class="section"><li><a href="../1/prologue.html"><strong aria-hidden="true">2.1.</strong> Prologue [0]</a></li><li><a href="../1/world1.html"><strong aria-hidden="true">2.2.</strong> World.1 And so world has changed</a></li><li><a href="../1/world2.html"><strong aria-hidden="true">2.3.</strong> World.2 No one remembers me</a></li><li><a href="../1/world3.html"><strong aria-hidden="true">2.4.</strong> World.3 Rinne</a></li><li><a href="../1/world4.html"><strong aria-hidden="true">2.5.</strong> World.4 Saviour of humanity's salvation</a></li><li><a href="../1/world5.html"><strong aria-hidden="true">2.6.</strong> World.5 Tenma and young man</a></li><li><a href="../1/world6.html" class="active"><strong aria-hidden="true">2.7.</strong> World.6 Storing memory of the world -Code Holder-</a></li><li><a href="../1/epilogue.html"><strong aria-hidden="true">2.8.</strong> Epilogue Story of young man forgotten by world</a></li></ol></li><li><a href="../2/index.html"><strong aria-hidden="true">3.</strong> Volume 2</a></li><li><ol class="section"><li><a href="../2/world1.html"><strong aria-hidden="true">3.1.</strong> World.1 Night is over</a></li><li><a href="../2/world2.html"><strong aria-hidden="true">3.2.</strong> World.2 To the east of the world</a></li><li><a href="../2/world3.html"><strong aria-hidden="true">3.3.</strong> World.3 Io Resistance</a></li><li><a href="../2/intermission.html"><strong aria-hidden="true">3.4.</strong> Intermission Heartless Angel</a></li><li><a href="../2/world4.html"><strong aria-hidden="true">3.5.</strong> World.4 Elven Forest</a></li><li><a href="../2/world5.html"><strong aria-hidden="true">3.6.</strong> World.5 Heavens Purgatory</a></li><li><a href="../2/world6.html"><strong aria-hidden="true">3.7.</strong> World.6 Black Morning Star</a></li><li><a href="../2/epilogue.html"><strong aria-hidden="true">3.8.</strong> Epilogue The Last two</a></li><li><a href="../2/continued.html"><strong aria-hidden="true">3.9.</strong> Continued Last Hero</a></li></ol></li><li><a href="../3/index.html"><strong aria-hidden="true">4.</strong> Volume 3</a></li><li><ol class="section"><li><a href="../3/world1.html"><strong aria-hidden="true">4.1.</strong> World.1 To The South</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Naze Boku no Sekai wo Dare mo Oboeteinainoka</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="./midashi07.jpg" alt="Cover" /></p>
+<p>Urza Government Palace, 20th floor.
+Through this vast floor, lukewarm air was swirling.
+In what looked like a dark waves.
+Dark Empress Vanessa magic power spread through air.
+It became highly dense and materialized.
+It could be said to become embodiment of solar maximum.</p>
+<p><em>She already fired so much magic in fight against Rinne.</em></p>
+<p><em>Yet she still possess this much magic power.</em></p>
+<p>But he was already ready to face it.
+After all she was the succubus that make all other demons to yield to her.
+Such infinite supply of magic power is not something to be surprised about.</p>
+<p>&quot;I'm going to end it, Vanessa.&quot;</p>
+<p>&quot;Come at me!&quot;</p>
+<p>At the same time as Kai brandished his sword, Vanessa raised one of her hands.
+Both understood situation, as they both were injured.
+Kai was injured by Vanessa's magic, and Vanessa was injured by Rinne's curse.
+So both of them  had to settle it quickly.</p>
+<p>&quot;I cannot imagine what you can do, but feel free to struggle.
+Until I'll crush you!&quot;</p>
+<p>It was pride of demon hero Vanessa.</p>
+<p>&quot;Devil killing Star!&quot;</p>
+<p>From within magic circle, that was swirling in air, appears meteorite.
+It was massive lump of blue energy, and with roaring sound it started to descend.</p>
+<p><em>She is going to blow the whole building with it.</em></p>
+<p><em>Does she intend to blow away not only me with Rinne, but even Resistance people!?</em></p>
+<p>Enormous meteorite covered his field of view.
+As he looked up at thing that is going to bring his certain death...</p>
+<p>&quot;Yeah, let me show you a proof.&quot;</p>
+<p>Kai raised his shining sword Code Holder overhead.
+On behalf of Prophet Sid, he is going to prove that this sword ended Great War in another world.</p>
+<p>&quot;This is my answer, Code Holder!&quot;</p>
+<p>Flash of colour of dawn appeared.
+With single flash of sword, he cut blue demon star.
+Then it broke off.
+Cutting the star with Code Holder make the star to broke apart, and multiple fragments fall like meteor shower.</p>
+<p>&quot;Ha! You can cut my magic for sure!&quot;</p>
+<p>Despite gritting her teeth, Vanessa retained her smile of strong person.
+She became convinced that this shining sword is the only reason that human survived so far.
+And now was time for counter-measures.</p>
+<p>&quot;Bloom, flowers of underworld!&quot;</p>
+<p>Many hundreds thousands of flames were floating around.
+These flames, that were part of star, now with Vanessa's magic words started to bloom.
+And one by one its started to amass enormous amount of energy within.
+A single touch would blow you away.</p>
+<p>&quot;Even for sword that can cut through magic, this number is not something it can deal with.&quot;</p>
+<p>She was convinced of her certain victory.
+Following Vanessa's will, these hundreds flames, that looked like a flowers, rushed forward at Kai.</p>
+<p>&quot;Fall...&quot;</p>
+<p>&quot;Turn it off!&quot;</p>
+<p>Suddenly buzzing sound could be heard.
+And then the whole power supply of Government Palace was cut off.
+All lights went off and the whole floor was covered by darkness.</p>
+<p>&quot;...What!?&quot;</p>
+<p>&quot;Perfect timing, Saki, Ashlan.&quot;</p>
+<p>Kai took out communication device, and the destination of his call was 17th floor, where Saki and Ashlan were.</p>
+<p>[As for our withdrawal. If it turns out impossible to beat Vanessa, we should cut of power in the whole building?
+With that demons will become confused and we can use it to escape. Is that ok?&quot;</p>
+<p>[Yeah, I'll signal you.]</p>
+<p>So at Kai's signal, both turned off power in entire building.</p>
+<p>&quot;At first I intended to escape.&quot;</p>
+<p>&quot;...I see now.&quot;</p>
+<p>Vanessa instantly understood Kai's plan.
+Why would he choose a cover of darkness -
+Humans are the only one that lack magic power.
+Thanks to that there is no way to pinpoint his location.
+Then how about Kai?
+Dark Empress Vanessa magic was glittering, illuminating her position.</p>
+<p>&quot;With me being only one visible in this darkness, do you intent to sneak attack on me?&quot;</p>
+<p>Then how about wiping away the darkness with her flame flowers?
+But that would be already late, Kai was already on the move and his sword is going to reach Vanessa before that.</p>
+<p>&quot;...Regrettable.&quot;</p>
+<p>She laughed with scorn at darkness.
+Succubus's claw pointed in the middle where faint light was shining.
+There was light of Code Holder, but it was faint and Kai's figure couldn't be seen.
+In this darkness Sid's sword was like creating dawn horizon.
+It was standing out too much.
+Trail of light showed Kai's movements.</p>
+<p>&quot;There you're! You're done!&quot;</p>
+<p>At where Vanessa's finger pointed -
+Pale fire flowers fired off in direction of Code Holder's light.
+It wasn't a number that could be cut.
+Huge pillar of fire arose.
+And then Vanessa saw a illuminated figure.
+It was Rinne.
+Young girl, who was hold Code Holder, calmly run through underworld flowers.</p>
+<p>&quot;It cannot be!?&quot;</p>
+<p>&quot;Who is done, you said?&quot;</p>
+<p>Vanessa heard a voice behind her.
+She felt chills.
+Never before feeling such fear, she started turning her head back.
+There was running towards her Kai.</p>
+<p><em>I see it now.</em></p>
+<p><em>In this darkness Code Holder light would become a easy to spot marking.</em></p>
+<p>Therefore Kai, in order to take advantage of darkness, passed Code Holder to Rinne, since she can take Vanessa's magic.
+And instead he took a roundabout way to her back.</p>
+<p>&quot;Finally you were able come this far.&quot;</p>
+<p>He was within a reach of palm.
+At this distance Vanessa couldn't use magic, since she would be also inflicting harm on herself.</p>
+<p>&quot;And here I thought you were just a mere weakling.&quot;</p>
+<p>Dark Empress Vanessa faced him.</p>
+<p>&quot;Splendid.&quot;</p>
+<p><img src="./Vanessa_manga_final.png" alt="Vanessa" /></p>
+<p>It was different from before.
+For the first time Demon hero gave honest praise to human.</p>
+<p>&quot;Using darkness.
+Taking advantage of it being originally human stronghold, you deprived me of sight.
+Not only that, you even passed away your sword, that was your trump card, to create this strategy.
+Such bold move.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>&quot;It deserves a honest praise.
+First time for anyone to reach so close to me...
+But, you miss one thing.&quot;</p>
+<p>Humans have their knowledge and wisdom.
+Using advantage of knowing Government Palace well, he created darkness.
+And using his own weapon, Code Holder, made a decoy.
+With that he was able come this close.</p>
+<p>&quot;So what are you going to do?&quot;</p>
+<p>Demon Hero asked Kai, who was approaching her.</p>
+<p>&quot;You threw away own sword.
+Even if you hide something up to your sleeve, it would not be enough to defeat me.
+You lack a certain strength for that.&quot;</p>
+<p>With magic protection, Vanessa was able to withstand dragon punch of Rinne.
+At this range even grenade wouldn't be able to harm her.
+Therefore it was fatal mistake for him to abandon his Code Holder.</p>
+<p>&quot;You'd think so.&quot;</p>
+<p>&quot;What!?&quot;</p>
+<p>&quot;I told you, didn't I? I'll show you our essence.&quot;</p>
+<p>With his last step, he leaped towards Vanessa's bosom.
+Spreading his legs, he leaned in.</p>
+<p>&quot;10 years. 10 years I have been training for the day when I'll have to defeat demons.&quot;</p>
+<p>He was bare-handed.
+At MDA Kai had a duty to learn anti-four races martial arts.
+Suddenly she felt strong impact.
+As if a similar to her blasting magic.
+Using his whole body Kai blew away Vanessa using <span title="jp. 鉄山靠 Weird name for technique.">Iron Lean</span>.</p>
+<p>&quot;...!?&quot;</p>
+<p>Thanks to protective magic Vanessa wouldn't sustain injury, but impact itself was enough to shake her entire body.
+For a moment she lost her balance.</p>
+<p>&quot;...This...is...how...?&quot;</p>
+<p>That was her miss.
+Who would expect, who would imagine human would challenge demon hero bare handed.</p>
+<p>&quot;You bastard, wasn't that... Sword... supposed your trump card!?&quot;</p>
+<p>&quot;Yeah well, I have no intention to rely on hero's sword alone.&quot;</p>
+<p>Vanessa made a mistake thinking that without sword or gun humans were harmless.
+That was cause of her defeat.</p>
+<p>&quot;Time to end it, Vanessa.&quot;</p>
+<p>Kai caught the Code Holder, that Rinne threw towards him.
+In front of this beautiful shining sword, Vanessa, who lost her balance, softened her tone and said:</p>
+<p>&quot;...This is my loss. I give you my <ruby>domain<rt>Urza</rt></ruby>.&quot;</p>
+<p><img src="./Vanessa_manga_defeat.png" alt="Vanessa defeat" /></p>
+<p>And then.</p>
+<p>Golden flash appeared and Vanessa has been cut down.</p>
+<p>He felt impact through the sword.
+Code Holder passed through magic barrier and for certain he felt that he cut her.</p>
+<p><em>Did I defeat her?</em></p>
+<p><em>With this I can be certain.</em></p>
+<p>This attack certainly reached her.
+But despite that both Kai and Rinne were on their guards.
+Vanessa, who received strike from Code Holder, was standing on her knees with her consciousness in place.</p>
+<p>&quot;...&quot;</p>
+<p>But something was wrong.
+Her wings were closed and she was looking down in silence.
+She didn't even hurry to try to heal her wounds.</p>
+<p>&quot;H-hey, Kai, isn't something wrong with her?&quot;</p>
+<p>&quot;...Yeah.&quot;</p>
+<p>All of her killing intent has disappeared.
+It seems Vanessa will to fight itself was at its end.
+But something was strange...</p>
+<p>&quot;...Sid.&quot;</p>
+<p>From Succubus charming lips, he heard a name of person that shouldn't exist in this world.</p>
+<p>&quot;...Sid... That's right, Sid, the prophet... How can I be in such pitiful state?&quot;</p>
+<p>Vanessa stood up.
+Her whole body shook, and her head remained looking down.</p>
+<p>&quot;World Reincarnation... Overwritten world... Right.
+I remember now, that Sid.
+He did mention like that.&quot;</p>
+<p>&quot;Vanessa!? What is it!?&quot;</p>
+<p>Sounds of cracks could be heard.
+Half of Vanessa body became petrified and started to collapse.</p>
+<p>&quot;Listen, human.&quot;</p>
+<p>Demoness opened her eyes.</p>
+<p>&quot;The world has changed.
+Sid called it <em>World Reincarnation</em>.
+And there is someone who tampered with the world.
+Look for him!
+He should be among three remaining hero.&quot;</p>
+<p>&quot;You know about Sid? And world alternation? You know this much...!?&quot;</p>
+<p>&quot;<ruby>He<rt>Sid</rt></ruby> predicted that some strange phenomena is going to happen with world.
+That's why.&quot;</p>
+<p>Demoness claw, painted with black, pointed at Kai's sword.</p>
+<p>&quot;Sid left this sword behind.
+In anticipation to this situation, I've hidden this sword.
+Key to correcting false world.&quot;</p>
+<p>&quot;This sword!?&quot;</p>
+<p>Kai stared at the Code Holder in his hand.
+That was the reason for it to be in Demon Graveyard?
+But one question remained.
+Why she kept the sword of Sid, whom she hated?</p>
+<p>&quot;Why... Aren't you enemy of Prophet Sid!?
+Records of Great War stated that much!&quot;</p>
+<p>&quot;Right, without doubt I had to cross swords with him. But...&quot;</p>
+<p>Her body started to collapse.
+Enduring it demon hero stood here and took a breath.</p>
+<p>&quot;It is something you do not know.
+There were hidden, forbidden <em>records</em>.&quot;</p>
+<p>Kai swallowed his breath with feeling of dread.
+He felt like he touched hidden taboo of the world.</p>
+<p>&quot;...Zero Code is quite troublesome magic.&quot;</p>
+<p>Her body started to crumble.
+White fragments of her petrified body started to fall down.
+This was certainly not caused by Code Holder.</p>
+<p>&quot;But with this, your victory is assured. Splendid, human...&quot;</p>
+<p>She took deep breath and then...</p>
+<p>&quot;...Ah damn, it is so vexing!&quot;</p>
+<p><img src="./Vanessa_manga_cute.png" alt="Vanessa" /></p>
+<p>Beautiful succubus took off her mask of demon hero, and said as if she reverted back to her forgotten old <em>self</em>.</p>
+<p>&quot;It is my defeat. Crushing defeat.
+I have no intention to make excuses.&quot;</p>
+<p>&quot;Vanessa?&quot;</p>
+<p>&quot;You better prepare yourself.
+If there will be next time...
+I'll face you as succubus and will make you cry with love.
+Mark my words!&quot;</p>
+<p>She smiled.
+Her beautiful body started turning into mist without leaving back even a single thread of hair.</p>
+<p>&quot;Next time... We'll... have more fun...&quot;</p>
+<p>Her entire body dissolved.
+These were last words of demon hero.</p>
+<p><em>TL Note:</em> Somehow it makes the saddest moment of this volume.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../1/world5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../1/epilogue.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../1/world5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../1/epilogue.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

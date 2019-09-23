@@ -1,0 +1,1000 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>World.4 Elven Forest - Naze Boku no Sekai wo Dare mo Oboeteinainoka</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../text-style.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="../about.html"><strong aria-hidden="true">1.</strong> About</a></li><li><a href="../1/index.html"><strong aria-hidden="true">2.</strong> Volume 1</a></li><li><ol class="section"><li><a href="../1/prologue.html"><strong aria-hidden="true">2.1.</strong> Prologue [0]</a></li><li><a href="../1/world1.html"><strong aria-hidden="true">2.2.</strong> World.1 And so world has changed</a></li><li><a href="../1/world2.html"><strong aria-hidden="true">2.3.</strong> World.2 No one remembers me</a></li><li><a href="../1/world3.html"><strong aria-hidden="true">2.4.</strong> World.3 Rinne</a></li><li><a href="../1/world4.html"><strong aria-hidden="true">2.5.</strong> World.4 Saviour of humanity's salvation</a></li><li><a href="../1/world5.html"><strong aria-hidden="true">2.6.</strong> World.5 Tenma and young man</a></li><li><a href="../1/world6.html"><strong aria-hidden="true">2.7.</strong> World.6 Storing memory of the world -Code Holder-</a></li><li><a href="../1/epilogue.html"><strong aria-hidden="true">2.8.</strong> Epilogue Story of young man forgotten by world</a></li></ol></li><li><a href="../2/index.html"><strong aria-hidden="true">3.</strong> Volume 2</a></li><li><ol class="section"><li><a href="../2/world1.html"><strong aria-hidden="true">3.1.</strong> World.1 Night is over</a></li><li><a href="../2/world2.html"><strong aria-hidden="true">3.2.</strong> World.2 To the east of the world</a></li><li><a href="../2/world3.html"><strong aria-hidden="true">3.3.</strong> World.3 Io Resistance</a></li><li><a href="../2/intermission.html"><strong aria-hidden="true">3.4.</strong> Intermission Heartless Angel</a></li><li><a href="../2/world4.html" class="active"><strong aria-hidden="true">3.5.</strong> World.4 Elven Forest</a></li><li><a href="../2/world5.html"><strong aria-hidden="true">3.6.</strong> World.5 Heavens Purgatory</a></li><li><a href="../2/world6.html"><strong aria-hidden="true">3.7.</strong> World.6 Black Morning Star</a></li><li><a href="../2/epilogue.html"><strong aria-hidden="true">3.8.</strong> Epilogue The Last two</a></li><li><a href="../2/continued.html"><strong aria-hidden="true">3.9.</strong> Continued Last Hero</a></li></ol></li><li><a href="../3/index.html"><strong aria-hidden="true">4.</strong> Volume 3</a></li><li><ol class="section"><li><a href="../3/world1.html"><strong aria-hidden="true">4.1.</strong> World.1 To The South</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Naze Boku no Sekai wo Dare mo Oboeteinainoka</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="./midashi05.jpg" alt="Cover" /></p>
+<p>South part of Io, [<span title="jp. 異邦の湿原 it's furigana is ストレンジ・マーシユ">Strange Marsh</span>]
+It was covered by deep blue glass.
+The sound of engine was reverberating through these muddy lands.
+Through dirt and glass, Urza Resistance military car was going towards the forest.</p>
+<p>&quot;I wonder why they call this place is called [Strange Marsh]?
+It is just quiet marsh.
+And there are no big monsters.
+Even our car can pass through it without a problem.&quot;</p>
+<p>&quot;Beyond this point is...&quot;</p>
+<p>&quot;Likely because you can see elven forest on other side of it.&quot;</p>
+<p>Kai, who was sitting on passenger seat, and Saki, who was sitting in back, both started saying in response to their driver's grumbling.</p>
+<p>&quot;There are elven traps, guarding beasts of fairies and dwarf's guardian statues.
+Even Io Resistance wasn't able carefreely explore this place.&quot;</p>
+<p>&quot;Putting aside this marsh, even I know about elven forest.&quot;</p>
+<p>Three cars were moving together and Ashlan was driving the leading one.</p>
+<p>&quot;Anyway, so <ruby>emperor<rt>Dante</rt></ruby>-dono dashed into such dangerous place?
+I don't get the way of thinking of these great people.
+But this time it totally has no meaning.&quot;</p>
+<p>Young man, who was tightly grasping wheel, furrowed his brows.</p>
+<p>&quot;They contacted us early morning, but since then there was no more contact with them.
+No idea whether they were annihilated or captured, but they definitely should be able to predict it before even going.&quot;</p>
+<p>&quot;Right, besides both staff officer and commander's aide were with them...&quot;</p>
+<p>Saki's tone was heavy one.
+Commander Dante suddenly took both of his trusted men and dashed into elven forest.
+After that all contact with them was lost.
+One would only suspect it as a joke.
+Was it <ruby>Commander<rt>Dante</rt></ruby>'s own decision?
+Or was it someone's else idea?
+Soldiers, that were left behind at Resistance stronghold, were shocked by it.</p>
+<p>&quot;So, we're the one who is going to clean after him?&quot;</p>
+<p>Quite heavy sigh could be heard from Ashlan.</p>
+<p>&quot;Io's commander has been long lost, and we, who is going to search for him, are going to be missing too...&quot;</p>
+<p>&quot;Aaa...Stop it, Ashlan! Don't wanna hear it.&quot;</p>
+<p>Saki covered her ears and screamed.</p>
+<p>&quot;Hey, Rinne, you think so too, right?&quot;</p>
+<p>&quot;...M?&quot;</p>
+<p>&quot;Oh, are you not feeling well? As one would expect.
+Jeanne-sama put a lot of effort to setup joint front with Io Resistance,
+and that self-important Commander flushed it all in toilet.
+Cannot believe it, you think so too right?&quot;</p>
+<p>&quot;Yeah, as one would expect this time...&quot;</p>
+<p>Kai responded instead of Rinne.</p>
+<p>&quot;We just have to confirm it on spot.&quot;</p>
+<p>If Commander Dante alongside his staff officer and soldiers were annihilated, then damage to the Io Resistance would be immeasurable.
+And majority of people, like Saki and Ashlan, were thinking that <ruby>emperor<rt>Dante</rt></ruby> rush actions were the reason.</p>
+<p><em>It is troublesome, we cannot blame Dante alone.</em></p>
+<p><em>It is hightly likely that there was someone behind putting this idea into his mind.</em></p>
+<p>This was suspicion shared by only four people.
+Kai and Rinne here, and Fairin and Jeanne who were riding car behind.</p>
+<p>&quot;I'm sorry, Kai.&quot;</p>
+<p>Rinne leaned over towards him, from back seat.</p>
+<p>&quot;I wish I could notice it earlier...&quot;</p>
+<p>&quot;Rinne, you did nothing wrong. Just telling us about it was more than enough.&quot;</p>
+<p>&quot;Hm? Oi, oi, what's wrong, Rinne-chan?&quot;</p>
+<p>&quot;It is all right, Ashlan.
+Rinne is just worried  about current situation in her own way.
+You better look in front of you instead.
+There is swamp all over the place.&quot;</p>
+<p>There was bottomless swamp, which was difficult to see under all of this grass.
+If car would stuck there, it would be quite difficult to get out.</p>
+<p>&quot;You worry too much, we already can see it.&quot;</p>
+<p>[Lead car, go to the right.]</p>
+<p>Jeanne said over communication device.
+And as per the instruction, Ashlan moved wheel to the right.
+From the front window, they could see sea of tress that filled the horizon.
+Ancient [Elven forest].
+Since the dawn of history, it was unexplored territory for humanity.</p>
+<p>&quot;! Hey, look there!&quot;</p>
+<p>Saki's shrill voice could be heard.
+She stood up and pointed towards where were four cars being parked.</p>
+<p>[...These are Io's transports.]</p>
+<p>Tension could be felt in Jeanne's voice.
+Yesterday at early morning, <ruby>emperor<rt>Dante</rt></ruby>'s party stopped here and went into forest.</p>
+<p>[We're getting off here.
+Radio unit, notify our base.
+We discovered what we presume to be Commander Dante's group transport. And...]</p>
+<p>All three cars stopped.</p>
+<p>[Now we commence the search.]</p>
+<br>
+<br>
+<p>There were gigantic and ancient trees, which age was several hundred years.
+Its roots were so deep that would be on par with height of adult.
+And its trunk were so big that would fully cover your field of vision at short distance.
+Trunk itself looked old: dry and cracked, and tree's roots were starting to wither at their ends.
+Despite that leafs looked freshly and vividly green even now.
+The reason was that these ancient trees were homes to foreign gods since ancient times.</p>
+<p>&quot;Elves and angels are always emitting small amount of magic power.
+And since it continued like that for many hundred years, these trees grew big like that.
+Well, it is mostly what people say...&quot;</p>
+<p>In front of forest that goes by name Elven Forest, was knight, who was leading group of people, turned around.
+At front lined up Urza's elite forces, and behind them were Io's garrisoned forces.
+These were soldiers who is going to carry out search within the forest.</p>
+<p>&quot;Captain Franz, Commander Dante passed through here?&quot;</p>
+<p>&quot;Yes, early morning yesterday, Commander departed to the forest without any prior notice.&quot;</p>
+<p>Captain, who had hollow cheeks, advanced further in with grim look on his face.
+He already had 5 years experience of exploring the forest.
+And a few days ago, he decided to help Jeanne's with search through the forest.</p>
+<p>&quot;Commander brought staff officer and his aide, together with dozens of our elite forces, and entered the forest...&quot;</p>
+<p>&quot;As the one who has deep knowledge about this forest you suggested against, but your suggestion was denied.&quot;</p>
+<p>&quot;I'm very sorry...&quot;</p>
+<p>&quot;I only confirmed the fact, there is no need to apologise.&quot;</p>
+<p>Jeanne fixed her gaze on a animal trail.
+Towards the road, in between enormous trees that stood like a wall, which was entangled by ancient tree's roots.
+And there were Fairin and Rinne, who already stepped onto the road.</p>
+<p>&quot;Kai, here, here! Come quickly!&quot;</p>
+<p>&quot;Yeah, but wait a bit, I need to prepare.&quot;</p>
+<p>General purpose assault bayonet [Drake Nail]
+Elven and Drake bullets.
+Kai was loading in both kind of bullets and after confirming it being loaded, put on black bayonet.
+Behind him were Saki and Ashlan, who were holding machine guns with grim look on their faces.</p>
+<p>&quot;Sorry for making you wait, Jeanne-sama...!&quot;</p>
+<p>&quot;Corporal Saki, Corporal Ashlan, both are ready.&quot;</p>
+<p>&quot;Good.&quot;</p>
+<p>In response to their salute, Commander gave short reply.</p>
+<p>&quot;Inform our comrades from Io Resistance.
+Six of us will enter the forest in pursuit of Commander Dante with whom we loss all communication...
+But, that's not a rescue operation. First we'll have to confirm his current situation.&quot;</p>
+<p><em>TL Note:</em> You know, I think there is no need to save some retard like Dante...</p>
+<p>There can be no rescue operation until <ruby>emperor's<rt>Dante</rt></ruby> condition will determined.
+Whether he lost in forest, or have been caught by foreign gods, or maybe killed together with all of his people.
+There were a lot possible scenarios to consider.
+So their first goal was to confirm what happened.</p>
+<p>&quot;Corporal Saki will be reporting on hourly intervals.
+Then as planned, Captain Franz, you should proceed to constructing the base.
+This place is vital to our operation.
+It shall become a line that connects us and hundreds of our soldiers at the headquarters.
+You are not to abandon this place.&quot;</p>
+<p>&quot;Yes, sir!&quot;</p>
+<p>&quot;And then <span title="elite forces">you</span> are to defend the base.&quot;</p>
+<p>&quot;Understood.&quot;</p>
+<p>Jeanne's elite forces, who were accompanying them until now, saluted.</p>
+<p>&quot;Fairin-sama, we're leaving Jeanne-sama to you.&quot;</p>
+<p>&quot;It is just a simple walk.
+It is nothing like our operation during capital's re-take...
+Well then, Jeanne-sama, let us proceed.&quot;</p>
+<p>Female bodyguard pointed towards inside of forest, and then started walked towards it.</p>
+<p>&quot;I'll be taking a lead.
+Following me, Kai, Jeanne-sama, Rinne, corporal Saki, and then corporal Ashlan.
+You should not be apart from the person ahead more than 3 meters.&quot;</p>
+<p>&quot;Understood.&quot;</p>
+<p>Carrying his Drake Nail, he followed her.</p>
+<br>
+<p>They were in ancient forest, and sunlight could be seen through trees.
+The ground was painted by colours of fallen leafs and flowers, young greenery were sprouting.
+And breeze here felt pleasant.
+Comparing to the ruins of the capital, the view here wasn't so bad with all these enormous ancient trees lined up in distance.</p>
+<p><em>It should be easy to spot wild animals.</em></p>
+<p><em>What we should be careful about are elven and dwarven traps.</em></p>
+<p>Elven traps would be magical, while dwarven traps tends to be more physical devices like poisoned arrows or pitfalls.
+But, that was a talk for when they'll be deep in the forest.</p>
+<p>&quot;We're going to advance for about 1 hour.
+It should be safe as long as we take the road I took three days ago.&quot;</p>
+<p>&quot;Understood.&quot;</p>
+<p>Fairin, who was holding her shamshir in the right hand, responded.</p>
+<p>&quot;Corporal Ashlan, Corporal Saki, how is our rear?&quot;</p>
+<p>&quot;N-nothing out of order.&quot;</p>
+<p>&quot;We'll put our lives into ensuring safety...!&quot;</p>
+<p>Both responded with tension in their voices.
+Commander Dante's party was already lost.
+So if they'd be careless, the same fate would await them.
+Understanding that, both were quite tensed.</p>
+<p>&quot;You should proceed with confidence.
+After all you were part of unit that was responsible for assault on <ruby>dark empress<rt>Vanessa</rt></ruby>.
+I trust you.
+You're among few that I can rely on with certainty.&quot;</p>
+<p>Jeanne shown a faint smile.
+At Resistance headquarters, soldiers were obviously shaken.
+Rather than by <ruby>emperor's<rt>Dante</rt></ruby> disappearance, they were more shaken by loss of contact with the de-facto commander Tsekhman.</p>
+<p>&quot;Rather than leaving it to them, I ought to move myself.
+Besides...
+There might someone else who sneaked their way into Io Resistance.&quot;</p>
+<p><img src="./p169.jpg" alt="Jeanne" /></p>
+<p>These words were said so that both of them, who were so vigilant, wouldn't hear.</p>
+<p>&quot;We need to confirm Qubiley's identity, so I haven't notified Io Resistance about Commander's aide.&quot;</p>
+<p>&quot;Yup, I'm not sure myself too.&quot;</p>
+<p>Rinne, who was behind Jeanne, quickly responded.
+All the while carefully looking at ancient trees.</p>
+<p>&quot;Still it is quite strange, she looks exactly like human.&quot;</p>
+<p>There was single question that they had about Commander's aide Qubiley - does she belong to foreign gods races?
+When Rinne saw Qubiley first time, she had some suspicions.
+Elven feature was their long ears, and angels could be recognized by their wings.
+Dwarf's skin is like a solid rock.
+And fairies had bluish skin colour with childish bodies.
+But as for her, there were no signs of such characteristics.
+So it was a wonder why she was suspicious (to Rinne).
+I.e. why she had peculiar smell and faint magic power.</p>
+<p>&quot;I felt she smell differently, but it is really only small difference.
+There are lot of people around, so I wasn't not very confident.&quot;</p>
+<p>&quot;One more thing, Rinne, you said that you felt magic power from Commander's aide?&quot;</p>
+<p>&quot;Yup, very weak magic power.
+But foreign gods should have holders of far superior magic power, so I think she's the weakest among elves.&quot;</p>
+<p>Was <ruby>commander's aide<rt>Qubiley</rt></ruby> a elf?
+Cutting own ears, and disguising both her smell and skin.</p>
+<p>&quot;...For angels their wings are the organ that produce magic power so she wouldn't cut it.
+And for both dwarfs and fairies disguising as human would be a very difficult task.
+Therefore she is likely to be elf in disguise.&quot;</p>
+<p>Jeanne muttered almost like whispering.
+Though it was Kai's conjecture since when he heard Rinne's story day before yesterday.</p>
+<p>[It is quite suspicious. You know... She doesn't smell like human.]</p>
+<p>&quot;<ruby>Emperor<rt>Dante</rt></ruby> might be arrogant, but he is not reckless.
+This time it is not his own decision, but rather third's party instigation.
+While it is certainly his own fault, I feel pity for him.&quot;</p>
+<p>Said Jeanne who carried on through the road full of fallen leafs.</p>
+<p>&quot;And Rinne, thank you for providing us with such valuable information.&quot;</p>
+<p>&quot;Yup!&quot;</p>
+<p><em>TL Note:</em> You know what is strange, I wonder why Jeanne is not surprised at all by Rinne.
+I mean sure Fairin has suspicion about Rinne, but I'm pretty sure Jeanne has no idea,
+so it is actually kinda weird that she accepts the fact that Rinne can easily spot non-human and magic.</p>
+<p>Rinne raised her voice, most likely out of happiness for being praised.</p>
+<p><em>It makes me worried though.</em></p>
+<p><em>I wonder if Jeanne hasn't noticed Rinne's true nature already.</em></p>
+<p>Deep inside Kai already had cold sweat.
+Humans are not able to sense magic.
+Kai was racking his brain about how to explain the fact that Rinne could sense magic.
+But the explanation was that Rinne received special training in true world.
+And since there was special weapon like drake nail, so such special training wouldn't be all that surprising.</p>
+<p>&quot;Rinne, it might be absurd but I'd like to ask you one more thing.&quot;</p>
+<p>Jeanne turned towards Rinne who was tagging along behind</p>
+<p>&quot;You were able to sense Qubiley magic power at Io's headquarters, so can you sense it here in forest?
+Ideally would  be if you understand her current location.&quot;</p>
+<p>&quot;...That would a bit difficult, I think.&quot;</p>
+<p>With serious face Rinne started to look around as if to show what she mean.</p>
+<p>&quot;You know this forest is completely filled with weak magic power.
+Most likely it belongs to elves, drawfs and fairies.
+So what I mean is that I can only understand that there are foreign gods.&quot;</p>
+<p>&quot;Finding someone in particular will be difficult?&quot;</p>
+<p>Listening to this conversion reminded Kai about another possible way to use [magic perception].</p>
+<p>&quot;Rinne, I'd like to ask you one thing, too. If you don't mind.&quot;</p>
+<p>&quot;Yup, what is it?&quot;</p>
+<p>&quot;Can you sense elven's traps?
+Most likely there should be lots of magic traps set across the forest.&quot;</p>
+<p>Even if they couldn't sense Qubiley.
+Their search would be much easier, if they could detect all these traps in the forest.</p>
+<p>&quot;You don't even need to detect precise location. Just [here is suspicions place] would be enough.&quot;</p>
+<p>&quot;Very well, I'll try my best!&quot;</p>
+<p>This time Rinne gave strong reply.</p>
+<p>&quot;Elven traps are quite ingenious so dealing with all of them would be impossible, but...
+Kai, here, look.&quot;</p>
+<p>Blond girl went towards road's side.
+As he was thinking that she was going around the ancient tree, half of her body popped from tree's tree trunk side, beckoning him.</p>
+<p><em>TL Note:</em> A bit unsure how to phrase it better, she basically went behind tree and then beckoned him to take a look</p>
+<p>&quot;See this tree. Ah, but be careful not to touch it.&quot;</p>
+<p>&quot;!?&quot;</p>
+<p>He stood put and held his breath.
+There was magic circle.
+On the tree's trunk was floating magic circle, which was shining with faint white light.</p>
+<p><em>Demons magic had purple colour.</em></p>
+<p><em>So this white belongs to foreign gods.</em></p>
+<p>Magic circle was flashing again and again.
+Regardless how long they waited, it wouldn't activate.
+Which confirmed that it was attached to the tree itself.</p>
+<p>&quot;Elven trap was in such place?
+Three days ago when we passed through here, neither me or Io soldiers noticed it.&quot;</p>
+<p>&quot;Jeanne, it would be better not to get too close to it.&quot;</p>
+<p>Kai said towards knight who was staring at the trap.</p>
+<p>&quot;This kind of magic activates upon touch.
+For insects or small animals like lizard it would be ok, but if human will touch it is definitely will get activated.&quot;</p>
+<p>&quot;...I'm curious what kind of trap is it, but I guess it would be better to not activate it?&quot;</p>
+<p>Jeanne had serious look on her face.
+Behind were Saki and Ashlan timidly avoided looking at trap's shining.
+And female bodyguard was walking around alone.
+She was intensely looking at the ground, and then moved brushes aside with her shamshir.</p>
+<p>&quot;...It seems I found it.&quot;</p>
+<p>She extended her hand and picked a single pistol out of the brush.</p>
+<p>&quot;Jeanne-sama, I think this is standard equipment of Io Resistance.
+And there are no traces of it to be exposed to nature for a long time.
+Most likely it has been dropped here very recently.&quot;</p>
+<p>&quot;So you mean Dante's group were...?&quot;</p>
+<p>&quot;They activated the trap and were killed. Or perhaps captured?&quot;</p>
+<p>Jeanne receive the gun from Fairin.
+After taking a look at it, knight pulled out the magazine.
+Dropping the remaining bullets out of it, she looked at their number.</p>
+<p>&quot;All bullets are in place.
+So they weren't attacked by elven forces in the forest.
+Did they just carelessly walked into the trap?
+...But to me it seems that it wouldn't be difficult to avoid such trap.&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>Kai, who stood besides Jeanne, pointed above their heads.</p>
+<p>&quot;Not this one, I bet it is the one above our heads.&quot;</p>
+<p>He pointed at branches and leaves through which was flowing sunlight.
+Jeanne, who looked there, opened her eyes wide and held breath.</p>
+<p>&quot;...This is real deal!&quot;</p>
+<p>On over hundreds of tree's leaves were floating circles.
+Rather than one big magic circle, like on the ancient tree's trunk, small magic circles were stuck on each and every leaf.
+And what's more troublesome is that together with sunlight filtering through trees, it was difficult to notice these circles light.</p>
+<p>&quot;Quite clever: hiding light of magic circles in sunlight filtering through trees.&quot;</p>
+<p>Fairin took a breath with mix of surprise and admiration.</p>
+<p>&quot;I [see] now that it is been pointed out, but otherwise it would be nearly impossible to spot.
+...Jeanne-sama, it seems emperor's group were done by it.&quot;</p>
+<p>The trap, that was carved onto big tree, was but a decoy.</p>
+<p>&quot;Damn... That's really bad taste. Every leaf has the magic trap on it.&quot;</p>
+<p>&quot;Hey, Kai, will we be ok looking at it?
+I hope we ain't going to be blown away by it all of the sudden?&quot; <em>TL Note:</em> Saki</p>
+<p>&quot;Well, I don't know that much, but just in case, Saki, Ashlan, you better to move away.&quot;</p>
+<p>Both backed away in hurry.
+And even more far behind, Rinne carefully stepped back.</p>
+<p>&quot;Kai, that's cool. I didn't notice it too.&quot;</p>
+<p>&quot;It was a pure luck.
+I only remembered that elven magic traps tend to be multi layered.&quot;</p>
+<p>In MDA's records it was stated that elves tend to place double or threefold layered traps.
+And most likely it wasn't for humans, but rather demons, cryptids and spirits.</p>
+<p><em>That's why I've been looking nearby for it.</em></p>
+<p><em>I'm too was close to carelessly pass by it.</em></p>
+<p>Cold sweat was followed along his cheeks.
+If Kai wouldn't remember battle records from the true world, then Dante's situation would repeat itself.</p>
+<p>&quot;Ah, Kai, I think I found something.&quot;</p>
+<p>Rinne beckoned him.</p>
+<p>&quot;Here, smell is strong.&quot;</p>
+<p>&quot;...Smell?&quot;</p>
+<p>&quot;Most likely it is elven path.&quot;</p>
+<p>Blond girl pushed aside brushes and there it was.
+Not even 10 meters away from the animal trail, which Jeanne shown, there was thin road with many twists.</p>
+<p>&quot;There was such road? And even so close, to the road we took...&quot;</p>
+<p>&quot;It is well hidden behind brushes and trees.
+So it is not surprise that Jeanne-sama didn't notice it, and the same about Io soldiers.&quot;</p>
+<p>Fairin looked back at the road.</p>
+<p>&quot;I see, they are observing humans from there?
+It would seem Io Resistance scouting was exposed.&quot;</p>
+<p>&quot;They are formidable enemies in completely different sense than demons...
+Rinne, are there any traps on this road?&quot;</p>
+<p>&quot;Hm, I think none.&quot;</p>
+<p>Rinne followed road, entangled by trees roots.
+The sweet scent of forest was so strong that it was almost chocking.
+Ground and hundreds of various plants completely covered the area, but Rinne's sense of smell would still be able to spot foreign gods.</p>
+<p>&quot;Ah.&quot;</p>
+<p>And then she stopped at the place where roots started to disappear.
+There was a clearing within the forest.
+On the naked from grass ground was drawn a big magic circle.
+With multiple complex patterns it looked like beautiful work of art.</p>
+<p>He remembered it.
+Comparing to previous trap, its size was much bigger.
+And complexity of its patterns was on entirely different level.
+As soon as he saw it, Kai remembered something similar from MDA's records.</p>
+<p>&quot;[<span title="jp. 審門 I'm not sure how to translate it">Judgement gate</span>].
+It is teleportation device of foreign gods...!&quot;</p>
+<p>&quot;I remember it from Urza.
+Demons were using teleportation.
+This magic is different from a trap.
+Even if human would touch it, it is not going to activate.&quot;</p>
+<p>Jeanne held her hand over the light circle.
+And then she carefully placed  her foot on it, but nothing changed in the light circle.</p>
+<p><em>TL Note:</em> I'm not sure it is actually good idea to test it yourself, Jeanne...</p>
+<p>&quot;As I thought it is only usable by foreign gods.
+Most likely it leads to elven den, so it would be great if we were able to activate it.&quot;</p>
+<p>Jeanne sighed.
+Under her foot the circle's light started to become brighter.
+And then all of the sudden it risen in the middle of air.</p>
+<p>&quot;What!?&quot;</p>
+<p>&quot;Jeanne-sama, please move away, it is starting!&quot;</p>
+<p>Fairin rushed towards her master.
+But both were already wrapped into the light.
+And then it expanded towards Kai and Rinne.
+Up until it covered even Saki and Ashlan.</p>
+<p><em>What is meaning of this? It is supposed to be activated by foreign gods only.</em></p>
+<p><em>There are none here and yet... Ah I see!</em></p>
+<p>It was Rinne.
+He met a gaze of confused Rinne.
+Her body has foreign gods <span title="jp. 因子 it might sound strange, but I decided to leave it as it is.">factor</span>.
+But who would expect that it would catch even Rinne by surprise.</p>
+<p>&quot;Kai!&quot;</p>
+<p>&quot;Rinne! Can you...&quot;</p>
+<p>Stop activation of this magic?
+Is what he tried  to say, but soon enough his vision became pure white light.</p>
+<hr />
+<p><a href="#Part2" id="Part2" class="Bookmark"></a></p>
+<p>In depths of ancient [Elven forest].
+Intense light fell onto his eyes.
+Kai stood alongside with Rinne in clam and lighted by sun clearing.</p>
+<p>&quot;Jeanne-sama, are you injured?&quot;</p>
+<p>&quot;...No problem.&quot;</p>
+<p>There were Jeanne and Fairin.
+And away from them were Saki and Ashlan, who fell on their backs.</p>
+<p>&quot;Ashlan, you shameless, you used this opportunity to grab my ass!&quot;</p>
+<p>&quot;No-no, your ass just placed itself under my hand!&quot;</p>
+<p>&quot;Silence, do not raise your voice within enemy positions.&quot;</p>
+<p>Fairin words quickly silenced both of them.</p>
+<p><em>This is?</em></p>
+<p><em>Doesn't look much different from before teleportation.</em></p>
+<p>Ancient trees were growing nearby, and the place was hidden by surrounding it brushes.</p>
+<p>&quot;Rinne, can we return back?&quot;</p>
+<p>&quot;...Yup, if it reacted to me, then if I start it once again we should be back at the same place.&quot;</p>
+<p>Rinne nodded and responded with low voice.
+But then brushes shook at the same time.</p>
+<p>&quot;Oh, what a pretty butterfly! Wait, wait, become Silk's friend!&quot;</p>
+<p>The one who jumped out of brushes was small person of foreign gods.
+With big golden eyes, gradient hair that changed from fluorescent green to light pink and height around Kai's waist.
+She was wearing sorceress like long robe and hat, almost like out of fairy tail.</p>
+<p>&quot;...Fairin, is that...?&quot;</p>
+<p>&quot;Please step back, Jeanne-sama.
+It is without doubts a fairy.
+But luckily she didn't notice us yet.&quot;</p>
+<p>The girl, that was running around after butterfly, belonged to race of fairies.
+Fairies were known to live up in a tree and they rarely go outside of forest.
+So it was quite rare for them to appear in front of people.</p>
+<p>&quot;Wait, wait... Oh!?&quot;</p>
+<p>Fairy stumbled upon Ashlan's foot and rolled over.</p>
+<p>&quot;Ouch! What is with this stump...Oh...&quot;</p>
+<p>Fairy looked up at Ashlan.</p>
+<p><em>TL Note:</em> Damn, Ashlan, cannot you at least be considerate of loli</p>
+<p>Next she looked at Saki, then Kai with Rinne, and then at Fairin and Jeanne.</p>
+<p>&quot;From which forest are you, elves?
+Oh, but I don't feel magic power from you?&quot;</p>
+<p>&quot;Well, no, we're humans.&quot; <em>TL Note:</em> Damn that's certain fail.</p>
+<p>&quot;...Fue?&quot;</p>
+<p>Fairy stared blankly at Ashlan, who blurted out on reflex.</p>
+<p>&quot;Human...Human...Hu...! Hyaaaaa! Human!? Don't eaaaaat me!&quot;</p>
+<p>&quot;H-hey, wait!&quot;</p>
+<p>&quot;Saaaaaaaaaaaaaaave me!&quot;</p>
+<p>She stamped ground with her short legs and quickly run away.
+As she hid within brushes, from where she came, in few seconds there was no signs of her presence.</p>
+<p>&quot;Let's chase after, since she run so fast, there might be something.&quot;</p>
+<p><em>TL Note:</em> No, I think she is just scared</p>
+<p>Pushing aside all plants Jeanne advanced.
+It was narrow path enough for single person.
+Following the path, two enormous ancient trees stood, like a gate.
+And then, in front of this gate, two young elven girls were standing with bows.</p>
+<p>Both exchanged glances.</p>
+<p>[Humans!?]</p>
+<p>[How they came here!]</p>
+<p>It was difficult to hear them, but that was definitely human speech.
+They glanced with rising hostility towards them and started preparing their arrows.</p>
+<p>&quot;Jeanne-sama, move behind me. I'll restrain them.&quot;</p>
+<p>Fairin readied her shamshir and prepared to launch towards them.
+But, all of the sudden Urza strongest warrior narrowed her eyes and stopped.</p>
+<p>&quot;I see, you are no longer planning to hide your true nature.&quot;</p>
+<p>&quot;You surprised me. Who would think you'd chase us up to this hidden village.&quot;</p>
+<p>There was beautiful woman with long light hair.
+The one who was supposed to be lost alongside <ruby>emperor<rt>Dante</rt></ruby>, Commander's aide Qubiley.
+But now she was walking out of two ancient trees.</p>
+<p>&quot;I'm glad to see you're safe and sound, Commander's aide. No, should I say foreign gods spy?&quot;</p>
+<p>&quot;Qubiley will suffice, paladin Jeanne.&quot;</p>
+<p>Her smile remained the same at face of Jeanne's sarcasm.
+Accompanied by two elven guards on both of her sides, she had no desire to continue hiding the fact that she is elf.</p>
+<p>&quot;Allow me to ask this: how did you reach this place?
+If you'd brute force your way through the forest, then guardian beasts would certainly make some noise.&quot;</p>
+<p>&quot;That's exactly right, I came here to in search our dear emperor-dono.&quot;</p>
+<p>&quot;For such human?
+In my opinion as Commander's aide, comparing to such human, staff officer Tsekhman ten thousand times more superior.&quot;</p>
+<p>&quot;What happened to them?&quot;</p>
+<p>&quot;I guided them to this forest.
+All I had to do is to give a proposal to our great majesty Dante.
+Then I entrapped them. So what do you think happened?&quot;</p>
+<p>Qubiley responded with sleek smile.
+Facing her now, he could see her smile as quite beautiful, but it was obviously different beauty from that of human girl.</p>
+<p>&quot;Don't make such scary face, Commander.
+They are all alive.
+Since they breathed in quite a lot of my paralysis flowers, they will not be able to move even a finger for next few days.&quot;</p>
+<p>&quot;That's surprising. Wouldn't you want to use this information to negotiate with us?&quot;</p>
+<p>&quot;I have something I'd like to ask.&quot;</p>
+<p>Saying so, elf folded arms under her chest.</p>
+<p>&quot;Commander Jeanne, I actually wanted to have opportunity for us to talk like that.
+Is it true that you defeated that monster in northern country?&quot;</p>
+<p>&quot;If you mean demon's hero, then yes, it is not a lie.&quot;</p>
+<p>&quot;I couldn't believe it when I heard it first time.
+I was wondering just what kind of strategy or weapon you would use to defeat such monster.
+But now, I can image the reason.&quot;</p>
+<p>Her gaze was fixed not on Jeanne, but Rinne who stood behind.
+For elf it would be obvious that Rinne holds great magic powers, and of course that she is not human.</p>
+<p>&quot;As you might already guess, behind me is elven village.
+And frankly speaking I suspect six of you are far more dangerous that the whole Io Resistance forces.&quot;</p>
+<p>&quot;Because we defeated demon's hero Vanessa you mean?&quot;</p>
+<p>&quot;Yes, truth to be told I don't want you to live, but I'm afraid there will be lot of casualties if we try to harm you.
+It would be not desirable for us to be attacked by other races while we're exhausted.&quot;</p>
+<p>Elven girl took a short pause.</p>
+<p>&quot;Therefore I have a proposal.
+First we'll turn in humans, this much is obvious.&quot;</p>
+<p>&quot;You mean, you'll release captured humans?&quot;</p>
+<p>&quot;In addition to that, we'll guarantee your safety and will swear not to attack you until you'll leave the forest.&quot;</p>
+<p>&quot;...And what you ask in return?&quot;</p>
+<p>&quot;It is quite simple matter, at least for you who defeated demon's hero.
+At the forest's north there is angel palace.&quot;</p>
+<p>Qubiley pointed towards deep within forest.</p>
+<p>&quot;Please go to angel palace and fight angels.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>Jeanne and Fairin both gulped.
+Saki and Ashlan became speechless in amazement.</p>
+<p>&quot;Hey, I don't get you, you know?&quot;</p>
+<p>Rinne raised a question to voice her doubts.</p>
+<p>&quot;Are you going to betray your race?
+Aren't bonds within foreign gods supposed to be strong?&quot;</p>
+<p>&quot;Angels already betrayed <ruby>us<rt>elves</rt></ruby>.&quot;</p>
+<p>Qubiley's smile disappeared.
+And she squeezed her next words from her tightened lips.</p>
+<p>&quot;I'll explain situation, please follow me.&quot;</p>
+<br>
+<br>
+<p>Elven hidden village.
+It was place where foreign gods were living and the only thing that was known about it is that it is not present on mankind maps.
+In short it was [unexplored region] for humans.</p>
+<p>&quot;It is first time for humans entering this village.
+You shouldn't expect welcome, but feel free to be proud.&quot;</p>
+<p>Elven village was the village made on ancient tree.
+Branches that connected ancient trees were used as floor.
+And the same tree's branches were combined to create small houses.
+Looking above, they could see altar which was watched by around hundred elves.
+Qubiley turned around.</p>
+<p>&quot;Light Knight Jeanne, you're wearing elven dress under your armour, right?&quot;</p>
+<p>&quot;...That's right.&quot;</p>
+<p>Symbol of knight Jeanne wasn't her armour, but rather the thin and light silk dress under it.
+<span title="霊光の戦装束">Spirit light battle attire</span>.
+It was one of the elven treasures.
+Holding the greatest power to resist magic, it could play a role of trump card against wielders of magic like demons.
+And it would seem the elven spy spot it out immediately.</p>
+<p>&quot;Where you got your hands on it?&quot;</p>
+<p>&quot;Along the Urza's borders.
+It was part of our spoils that we took during our surprise attack on demons, which in turn took it from you.
+Well, it is more than 10 years old story though.&quot;</p>
+<p>&quot;That makes me relieved, if you'd took it away directly from us, then <span title="jp. レーレーン">Reiren</span>-sama wouldn't overlook it.&quot;</p>
+<p>Kai narrowed his eyes at the sound of unfamiliar name.
+Shortly after, three elves descended using ladder from up of the tree.
+Two of them were armed man, with the one in the middle who had appearance that of young girl around 15-16 years old.
+But contrary to her small build, her ears were far longer than that of others two.</p>
+<p><em>The longer elf's ears, the longer he lived.</em></p>
+<p><em>And the one in the middle should be the eldest here.</em></p>
+<p>She was wearing seven layered kimono, similar to Jeanne's silk spirit garments.
+And the elven girl had long and beautiful gradient hair, which was almost reaching the ground.
+Her young looking face radiated the light of certain intelligence.
+And her <span title="jp. 風格 It can have several meanins but I think this one is best">personality was also peculiar.</p>
+<p><img src="./kuchie-003.jpg" alt="Reiren" /></p>
+<p>&quot;How provoking.&quot;</p>
+<p>Elven girl grimaced upon seeing Kai's group.</p>
+<p>&quot;Why ought we to mingle with Urza's humans.
+Our village is already dirtied with their smell.
+This vulgar race should leave right now.&quot;</p>
+<p>&quot;Reiren-sama.&quot;</p>
+<p>&quot;But this is only my dissatisfaction, which for now I'll keep to myself.&quot;</p>
+<p><em>TL Note:</em> Sure, we believe you Reiren-chan.</p>
+<p>The elven girl, who has been introduced by Qubiley, sighed.</p>
+<p><em>This prideful attitude...</em></p>
+<p><em>Fits image of foreign gods.</em></p>
+<p>If demons were known for their love for battles, foreign gods were known for their high pride.
+But, once you put it into perspective.
+Someone like that who speak frankly is far easier to deal with than for example Qubiley who pretends to be human with her beautiful smile.</p>
+<p>&quot;I'm village's shrine maiden, Reiren.
+I heard from Qubiley about <span title="I'll be using archaic 2d person pronoun for when Reiren speaks">thou</span>.
+Thou are ones who defeated that demon hero.&quot;</p>
+<p>The elf looked at Kai's party once more.</p>
+<p>&quot;That monster once had a fierce battle with Heaven Lord Alfreyja-dono.
+At that time the outskirts of our forest turned into ashes.
+And for thee to defeat that Vanessa is simply unbelievable...&quot;</p>
+<p>&quot;If it is so unbelievable, I would say what we heard is equally unbelievable.&quot;</p>
+<p>Jeanne looked up the trees.
+There were appearance of elves, fairies and dwarves.
+There were several hundreds of them, carefully listening to conversation between <ruby>shrine maiden<rt>Reiren</rt></ruby> and <ruby>knight<rt>Jeanne</rt></ruby>.</p>
+<p>&quot;Is it true that elven elder have been captured by Heaven Lord Alfreyja?&quot;</p>
+<p>&quot;If it wouldn't be, then we wouldn't even talk about it.&quot;</p>
+<p>Shrine maiden took a seat on big leaf that was laying out.</p>
+<p>&quot;Heaven lord has changed.
+Once such calm and strong person, who illuminated the path for foreign gods like a sun...&quot;</p>
+<p>&quot;Elves are no longer necessary to him?&quot;</p>
+<p>&quot;The same about dwarves and fairies.
+We are beneath angels.&quot;</p>
+<p>Foreign gods were consisting of four races.
+And everything went wrong once Heaven Lord Alfreyja suddenly declared that they are not equals, but beneath angels.</p>
+<p>&quot;Of course it was unacceptable.
+After discussing among three races, elven elder alongside representative of each race headed for angel palace,
+in order to appeal directly to Heaven Lord, but...&quot;</p>
+<p>&quot;They didn't return.&quot;</p>
+<p>&quot;Correct. However if we are to go to the palace uninvited, then rift with angles shall become unrepairable.&quot;</p>
+<p>&quot;So that's why we are the one to do it?
+So the idea is while humans invade the palace and rampage there, elven elder could coincidently escape.
+Regardless of whether we'll be successful or not, it will not affect elves.&quot;</p>
+<p>&quot;That's right, if thou shall be crushed, we shall pretend to know nothing.
+But if, thou are to free our elder, we'll release captured humans.&quot;</p>
+<p>&quot;...Fairin.&quot;</p>
+<p>Jeanne exchanged glances with female bodyguard nearby.</p>
+<p>&quot;Do you think it is feasible?
+For six of us marching into angel's den and freeing captured elder under strict guard.&quot;</p>
+<p>&quot;Impossible. It is likely we'll be surrounded and completely annihilated.&quot;</p>
+<p>Bodyguard replied without hesitation.</p>
+<p>&quot;In first place there is no proof to what they said.
+And it is possible that if six of us go there, we'll be met by coalition of angels and elves.&quot;</p>
+<p>Kai had a similar suspicions.</p>
+<p><em>It could be a clever scheme to deal with us who invaded their village.</em></p>
+<p><em>Using angel forces they could trap us. Which would be a certain way to crush us.</em></p>
+<p>Their explanation about captured elven elder by itself was not enough for a trust.</p>
+<p>&quot;I'll put my own neck on the line.&quot;</p>
+<p>All of the sudden the former aide of Io Resistance Commander said.</p>
+<p>&quot;Qubiley? What!?&quot;</p>
+<p>&quot;In any case until they'll reach the angel palace they'll require someone to guide them.
+And this duty will be mine.&quot;</p>
+<p>Former Commander's aide put her hand on the chest.</p>
+<p>&quot;While on our way to the palace, if you think we lied to you, then feel free to do whatever you want with me.
+Whether you'll take me hostage or cut into pieces, you're free to do as you wish.&quot;</p>
+<p>&quot;Rejected. It is just not enough&quot; <em>TL Note:</em> <code>却下。天秤が釣り合わないな</code> she talks about balancing weights, but I'm not sure how to put it in english. TODO</p>
+<p>Fairin outright denied her declaration of being ready to put her own life.</p>
+<p>&quot;We have six people here, and not to mention twenty more hostages.
+It is quite arrogant for you to say that your life alone would suffice.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>&quot;Either increase head count, or think of a better alternative.&quot;</p>
+<p>&quot;So imprudent.&quot;</p>
+<p>Young girl, who was sitting with her legs crossed, raised her knees.</p>
+<p>&quot;So what thou means is that rather than Qubiley, it is me, shrine maiden, who ought to accompany thee.
+If I lied to thee then my own life shall be in danger.&quot;</p>
+<p>&quot;If there were no lies in your words, then it should be fine to accept such proposition.&quot;</p>
+<p>&quot;But is that actually good idea?
+Despite my appearance I'm representative of my race.
+In thy words would be millennium rank.
+Do not expect it to be easy to take my life.&quot;</p>
+<p>The elven girl, who was dressed in seven layered spirit garments, was without doubt far stronger than Qubiley.
+Her accompanying them would only increase the danger. <em>TL Note:</em> <code>同行させれば、常に寝首を搔かれる危険も内包することになる。</code> Last sentence is a bit unclear to me in exact meaning.</p>
+<p>&quot;I do not think you're stronger than demon's hero.&quot;</p>
+<p>&quot;...Human, I say thee are pretty good.&quot;</p>
+<p>In response to Fairin, elven shrine maiden Reiren responded with belligerent expression.</p>
+<p>&quot;Isn't it a fine idea, I shall accompany thee.
+We'll sneak into the angel palace and I'll guide thee to their prisons.
+This ought to satisfy thee?&quot;</p>
+<p>&quot;Shrine maiden!?&quot;</p>
+<p>&quot;Please wait, if something would happen to shrine maiden in such situation...&quot;</p>
+<p>&quot;Alfreyja-dono has changed already.
+And there are no guarantees that elder will come back to us.
+If we are to remain put, then it would only assert that elves submitted to angels.
+Am I wrong?&quot;</p>
+<p>Shrine maiden raised her voice so that her comrades above would hear.
+It's volume was enough to even shake leafs of ancient tree.</p>
+<p>&quot;Fairies and dwarves, they are yet to make a move.
+If we are to offend Alfreyja-dono then it shall lead us to civil war.
+This plan is but mine alone.
+In worse case my life alone shall be at stake.&quot; <em>TL Note:</em> <code>最悪の事態にはワシの命一つでどうにでもなる</code> I rephrased last sentence, need to re-think?</p>
+<p>&quot;Shrine maiden...&quot;</p>
+<p>&quot;The talk is over. Everyone, return back!&quot;</p>
+<p>Elves, dwarves and fairies started to disperse.
+Likely to return back to their duty of defending vast forest.</p>
+<p>&quot;With this there should be objections.&quot;</p>
+<p>Young girl stood.
+Her seventh layered spirit garments fluttered together with her light gradient hair.</p>
+<p>&quot;Remember it, human commander.
+This convent between elves and thee.
+Make absolutely no mistake.
+If thee shall lose nerve, thee shall not return back alive from this forest&quot; <em>TL Note</em>: Might need to re-check <code>土壇場で怖じ気づいてみよ。この森から生かして帰さん</code></p>
+<p>&quot;You don't have to say it twice.&quot;</p>
+<p>&quot;Splendid, then let us discuss small details.
+And... It is annoying, but at least for today and tomorrow thou are my guests.
+Oi, Silk.&quot;</p>
+<p>She clicked her fingers.
+At that sign fairy, who previously run away, came along.</p>
+<p>&quot;Prepare seats.&quot;</p>
+<p>&quot;Yes!&quot;</p>
+<p>With cheerful voice, the fairy started moving her fingers, as if stirring the air.
+And at the same time under Kai's feet started to gather small wind.
+It was strong enough to bristle their hair.
+And as the wind floated, leaf of ancient tree fell at Kai's foot.</p>
+<p>&quot;Fairy magic?&quot;</p>
+<p>Big leaf was on the ground.
+Not only for Kai, but Rinne, Jeanne, Fairin and Saki with Ashlan, each got own leaf from ancient tree.</p>
+<p><em>Did she just rise winds by moving only her fingers alone?</em></p>
+<p><em>To bring these leafs here?</em></p>
+<p>The fact that that magic activation didn't even have a noticeable light was worthy of a praise.
+It was quiet to a frightening extent, and such subtle wind was able to bring these leafs here.
+This was the fairy magic.
+It was delicate power, quite different from destructive magic of demons.</p>
+<p>&quot;Wow, so cool. Is it ok to seat here?&quot;</p>
+<p>Rinne looked in amazement at the leaf in front of her.</p>
+<p>&quot;We have to discuss small details yet, so seat down already.
+I have no desire looking up while talking.&quot;</p>
+<p>Once again sitting down with her legs crossed, shrine maiden Reiren told them.</p>
+<br>
+<br>
+<p>Unexplored region [Elven hidden village].
+Above his head sky has been painted by night.
+In comparison with bright day when sunlight filtering three trees, night was completely dark.
+The only source of light was lit bonfire in front of Kai.</p>
+<p>&quot;...How brave to sleep so soundly here.&quot;</p>
+<p>Behind Kai, who was sitting on ancient tree's leaf, was Rinne.
+She was asleep on multiple leafs that were spread on the ground.
+Turned sideways, she was breathing in her sleep with a cute sound.
+He wasn't sure how long it is been since she went to sleep.</p>
+<p><em>Even though there is a risk of being attacked by elves at night...</em></p>
+<p><em>She isn't even slightest catious.</em></p>
+<p>One could only wonder whether she trusted their story during day, or was it just her boldness.
+Though he recalled that she was also soundly asleep during their stay in [Neo Vishal] hotel, despite it being full of humans.
+So he suspected the latter, or maybe she was just confident enough to perceive attack from elves.</p>
+<p>&quot;Still awake?&quot;</p>
+<p>In the middle of the night he could see young elven girl, reflected in the fire.</p>
+<p>&quot;Both plants and animals are asleep.
+Yet humans lit fire to keep themself awake.
+It is beyond my understanding.&quot;</p>
+<p>Said shrine maiden Reiren.
+Then she turned towards soundly asleep Rinne.</p>
+<p>&quot;We have no intention to attack thee in the thy sleep.
+As long as our contract is intact, I have no intention of harming thee.&quot;</p>
+<p>&quot;...Understood.&quot;</p>
+<p>He sheathed back his bayonet, which he drew as precaution.</p>
+<p>&quot;Jeanne, commander of thine, said that the ones who defeated that Vanessa were thee and this girl.
+Therefore I have something to ask.&quot;</p>
+<p>&quot;How did we beat her?&quot;</p>
+<p>&quot;I'm not greedy to such extent.
+Besides that's a leverage to keep elves in check, isn't?&quot;</p>
+<p>Responding with serious face, elven girl sat down in front of Kai.</p>
+<p>&quot;I only wish to ask you one thing:
+The way thee defeated Vanessa, will it work on heaven lord Alfreyja too?&quot;</p>
+<p>Kai was wondering whether because she was talking with him, but she omitted honorific [dono] now.
+Or maybe...</p>
+<p>&quot;I think it might or might not work.&quot;</p>
+<p>&quot;Hou?&quot;</p>
+<p>&quot;When I thought together with Rinne, there were several factors mixed in.
+If we'd to fight her once again, I'm honestly not sure about our win.&quot;</p>
+<p>He lost count of how many times they were on a verge of defeat, and how many times luck was on their side.
+And on of these [factors] was...</p>
+<p><em>That eerie and weird creature that I no longer want to recall...</em></p>
+<p><em>Without doubt it was thanks to that monster's intrusion that I was able to defeat Vanessa.</em></p>
+<p>That so-called rasterrizer monster attacked Vanessa, which turned it into 3 vs 1 fight.
+And it's attack gravely wounded Vanessa.
+Moreover it was thanks to Code Holder's effect that he was able to make final push against Vanessa.</p>
+<p>&quot;Leaving that aside I want to ask why?
+Why you asked us to help free your elder.
+If we meet angels there, we'll have to break through with force.&quot;</p>
+<p>In worst case scenario they'll have to fight Angel's leader Alfreyja.
+There was no necessity to fight, and even risking own head with such deal.
+But right now he didn't hear Reiren's muttering something like that. <em>TL Note:</em> <code>だが今のレーレーンの呟きはそう聞こえなかった</code> I'm a bit unsure here as it is kinda hard to grasp, whether it supposed to mean that Kai kept his thoughts about Alfreyja to himself, or whether she didn't mention it.</p>
+<p>&quot;And I heard you hold hopes for us to defeat foreign gods hero.&quot;</p>
+<p>&quot;I'll give a warning to thou.&quot;</p>
+<p>Young elven girl, standing in front of fire, responded with low voice.</p>
+<p>&quot;If we'll be discovered it shall come to this.
+Whether thee hopes or not, today's Alfreyja-dono will listen to no words.
+So it shall become a fight for survival.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>&quot;If thee shall be winner, then we'll be rescuing our people in captivity.&quot;</p>
+<p>&quot;And if we lose?&quot;</p>
+<p>&quot;Thee shall not return alive.
+But so that we clear, I'm at most a guide.
+I have no intention of turning against angels and creating ruckus while saving our elder.
+Everything shall be thou, humans, deeds.
+Understand this much.&quot;</p>
+<p>&quot;I understand that much. In first place I had no intention of fighting together.&quot;</p>
+<p>If elves are to attack angel palace, then foreign gods will descend into civil war.
+That was the reason why Reiren wasn't planning to participate in battle.
+Moreover, the same could be said about dwarves and fairies.
+If heaven lord Alfreyja wrath would fall onto elves, two other races had no reason to incur angels wrath.</p>
+<p><em>But if there is even a slight chance that it would come to this...</em></p>
+<p><em>Does this shrine maiden intend to present her own neck in order to beg mercy?</em></p>
+<p>Not to humans, but Alfreyja.</p>
+<p>&quot;How vexing... Why must we accept help of humans?
+Did our people fall so low?&quot;</p>
+<p>Under fire's light she smiled in self-derision.
+And then elven girl stood up.</p>
+<p>&quot;We shall depart at early dawn.
+There are no problems?&quot;</p>
+<p>&quot;None, but Jeanne is yet to return back though?&quot;</p>
+<p>&quot;If thee are uncertain then why not contact her over that communication device?
+Both Jeanne with Fairin and thee are free to do as you will.&quot;</p>
+<p>The girl who was now standing looked at him.</p>
+<p>&quot;No need to worry, they shall be back to village.
+I have something I want to ask Qubiley.
+Well, for the most part, it is about time she spent hiding among Io Resistance.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>&quot;Do thee find it unfair?&quot;</p>
+<p>&quot;It is humans fault for not spotting Qubiley. There is nothing unfair about it.&quot;</p>
+<p>There was nothing beautiful about Great War.
+Moreover the whole surprise attack on demons in capital, done by Urza Resistance, wasn't fair and square too.</p>
+<p>&quot;By the way, about what you mentioned previous, what if by some chance we'll defeat Alfreyja?
+What are you intending to do?&quot;</p>
+<p>&quot;What? Are thee worried even about such things?&quot;</p>
+<p>The elven girl who was serious until now, looked back at him with a grin.</p>
+<p>&quot;This strategy of our is itself a treason against angels.
+Are thee perhaps worrying whether I have ambition to become foreign gods hero once Alfreyja shall be slain by thee?&quot;</p>
+<p>&quot;Yeah, after all you're cunning.&quot;</p>
+<p>&quot;Ain't thee quite sharp?
+If thee wishes to survive tomorrow, keep it up.&quot;</p>
+<p>Towards small back of young girl, who turned back and started leaving, Kai said:</p>
+<p>&quot;One last question.&quot;</p>
+<p>&quot;What is it? But I'm warning thou. If I hear some rudeness, I shall cut thee tongue.&quot;</p>
+<p>&quot;Do you know human by name Sid?&quot;</p>
+<p>&quot;Who that could be?&quot;</p>
+<p>&quot;No, never mind if you don't know. Sorry to keep you.&quot;</p>
+<p>Her long hair shook and young started walking away.
+Kai was waiting to make sure he is alone.</p>
+<p>&quot;She doesn't know. After all...&quot;</p>
+<p>Kai looked at the sky above.
+As for other races, demon hero Vanessa knew about Sid.
+And so it made Kai wonder about foreign gods.
+If elven shrine maiden knew nothing then likely the same could be said about rest of elves.
+But it might be different for foreign gods hero.</p>
+<p>[He predicted that some strange phenomena is going to happen with world.]</p>
+<p>[There is someone who tampered with the world. He should be among three remaining hero.]</p>
+<p>Heaven lord Alfreyja had a sudden change.
+This was something he heard from shrine maiden Reiren and that made his heart's beating uncontrollable alongside his thoughts.</p>
+<p><em>I don't think that hero's change is coincidental.</em></p>
+<p><em>That makes Alfreyja a prime suspect.</em></p>
+<p><em>TL Note:</em> Personally I think Kai is too optimistic about it.</p>
+<p>Changing to results of Great War in true world.
+And then drawing a scenario where angels decided to dominated other races among foreign gods.
+So far he could understand
+But...</p>
+<p><em>TL Note:</em> Might need to re-evaluate <code>そう考えることで合点もいくのだ。</code></p>
+<p>The means were unknown to him.
+And he couldn't even imagine what kind of power could overwrite the world itself.</p>
+<p>&quot;I guess only Sid knew...?&quot;</p>
+<p>Watching fire alone, Kai clenched his fists.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../2/intermission.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../2/world5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../2/intermission.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../2/world5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

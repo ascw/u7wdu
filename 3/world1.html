@@ -1,0 +1,667 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>World.1 To The South - Naze Boku no Sekai wo Dare mo Oboeteinainoka</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="../text-style.css">
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li><a href="../about.html"><strong aria-hidden="true">1.</strong> About</a></li><li><a href="../1/index.html"><strong aria-hidden="true">2.</strong> Volume 1</a></li><li><ol class="section"><li><a href="../1/prologue.html"><strong aria-hidden="true">2.1.</strong> Prologue [0]</a></li><li><a href="../1/world1.html"><strong aria-hidden="true">2.2.</strong> World.1 And so world has changed</a></li><li><a href="../1/world2.html"><strong aria-hidden="true">2.3.</strong> World.2 No one remembers me</a></li><li><a href="../1/world3.html"><strong aria-hidden="true">2.4.</strong> World.3 Rinne</a></li><li><a href="../1/world4.html"><strong aria-hidden="true">2.5.</strong> World.4 Saviour of humanity's salvation</a></li><li><a href="../1/world5.html"><strong aria-hidden="true">2.6.</strong> World.5 Tenma and young man</a></li><li><a href="../1/world6.html"><strong aria-hidden="true">2.7.</strong> World.6 Storing memory of the world -Code Holder-</a></li><li><a href="../1/epilogue.html"><strong aria-hidden="true">2.8.</strong> Epilogue Story of young man forgotten by world</a></li></ol></li><li><a href="../2/index.html"><strong aria-hidden="true">3.</strong> Volume 2</a></li><li><ol class="section"><li><a href="../2/world1.html"><strong aria-hidden="true">3.1.</strong> World.1 Night is over</a></li><li><a href="../2/world2.html"><strong aria-hidden="true">3.2.</strong> World.2 To the east of the world</a></li><li><a href="../2/world3.html"><strong aria-hidden="true">3.3.</strong> World.3 Io Resistance</a></li><li><a href="../2/intermission.html"><strong aria-hidden="true">3.4.</strong> Intermission Heartless Angel</a></li><li><a href="../2/world4.html"><strong aria-hidden="true">3.5.</strong> World.4 Elven Forest</a></li><li><a href="../2/world5.html"><strong aria-hidden="true">3.6.</strong> World.5 Heavens Purgatory</a></li><li><a href="../2/world6.html"><strong aria-hidden="true">3.7.</strong> World.6 Black Morning Star</a></li><li><a href="../2/epilogue.html"><strong aria-hidden="true">3.8.</strong> Epilogue The Last two</a></li><li><a href="../2/continued.html"><strong aria-hidden="true">3.9.</strong> Continued Last Hero</a></li></ol></li><li><a href="../3/index.html"><strong aria-hidden="true">4.</strong> Volume 3</a></li><li><ol class="section"><li><a href="../3/world1.html" class="active"><strong aria-hidden="true">4.1.</strong> World.1 To The South</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Naze Boku no Sekai wo Dare mo Oboeteinainoka</h1>
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="./midashi01.jpg" alt="Cover" /></p>
+<p>A solemn ancient tree was standing upright.
+Being several hundred years old, the tree had grown so much that it seemed to be piercing through the heavens.
+It had countless branches; its thick leafs were still fresh, emitting a wild fragrance.</p>
+<p>Elven forest...
+At the place where this ancient tree several hundred years old was standing, the scenery was captivating in all directions.</p>
+<p>&quot;I've been mindlessly walking through it up until now, but calming down and taking a proper look, this forest is great.&quot;</p>
+<p>Said the young man who was sitting on the tree's roots.
+With the black bayonet &quot;Drake Nail&quot; by his side, Kai was squinting at the dazzling sunlight filtering through the leaves.</p>
+<p>His name was Kai Sakuravent.
+He was a young man of age 17, with hair and eyes of dark ultramarine colour.
+He was wearing MDA's battle suit, mass-produced garments for soldiers to fight against other races.
+Under it was a body that had undergone training for countless days, radiating a definite strength.</p>
+<p>&quot;As one would expect from Io's unexplored region...&quot;</p>
+<p>The forest where Kai was currently in, was the territory of the race called foreign gods.
+They comprised of elves, dwarves, fairies and angels.
+Far wiser than humans, and in possession of magic tools far more powerful than human weaponry.
+Often called as a [better version of humans].
+And on this land, humans had been dominated by foreign gods for over a hundred years.</p>
+<p>But right now...
+Foreign gods showed no hostility towards the humans who had entered the forest.
+Across the forest could be heard the chirping of birds, and there were no signs of ferocious animals.
+It was a calm and relaxing place.
+A true tranquillity.</p>
+<p>&quot;Kai, you've been resting here?&quot;</p>
+<p>He looked beyond the thicket.
+A silver haired girl, clad in light armour, peeked at him from within the animal trail.
+Her name was Jeanne.
+She had a beautiful and dignified face.
+Her long silver hair was tied behind, and together with her tall figure, she looked a bit boyish.
+While being just seventeen, as Kai, she was the leader of a whole Resistance Army.</p>
+<p>&quot;Didn't you say that you were going to look for Reiren?
+It's not really good to laze around here, while everyone is busy preparing for our next expedition.&quot;</p>
+<p>&quot;I'm waiting for Rinne, she is the one who went to look for Reiren.&quot;</p>
+<p>He wasn't lazing around.
+Saying so, Kai jumped up from the root on which he was sitting.</p>
+<p>&quot;Eh, Rinne? I'm kinda worried if she hasn't gotten lost...&quot;</p>
+<p>&quot;Don't worry. When it comes to Rinne, wherever I am, she can quickly...&quot;</p>
+<p>&quot;Quickly?&quot;</p>
+<p>&quot;...She'll come back for sure.
+Rinne has already gotten used to exploring this forest.&quot;</p>
+<p>Kai wondered how Jeanne would react, if he'd just said that Rinne could pin down Kai's location with her nose.</p>
+<p>The girl named Rinne, was in fact non-human.
+She had a mix of blood from various human enemies.
+But among humans only Kai was aware of this fact.</p>
+<p>&quot;By the way, Jeanne, weren't you supposed to attend a meeting in the village?&quot;</p>
+<p>&quot;That's right.
+Together with the angels...
+Anyway, the elven elder got tired of waiting... just where is our Reiren?&quot;</p>
+<p>&quot;Well then, how about I go fetch her?
+I remember which direction Rinne took.&quot;</p>
+<p>He pointed towards bushes deep in the forest.</p>
+<p>&quot;Jeanne, are you going back?&quot;</p>
+<p>&quot;No, I'll tag along.
+I've been sitting the whole time while in discussion with the foreign gods, now my body feels stiff.
+So I feel like taking a short walk.&quot;</p>
+<p>They walked through the animal trail,
+moving forward with withered grass under their feet.</p>
+<p>&quot;Just now, I heard quite a surprising story from the elves.&quot;</p>
+<p>He wanted to ask what, but before that Jeanne heaved a sigh and continued.</p>
+<p>&quot;So for the foreign gods it might be normal to sit down for about a month without eating anything when they have serious discussions.
+They tend to carry on, without sleeping or even a single drop of water.&quot;</p>
+<p>&quot;I cannot imagine.&quot;</p>
+<p>&quot;Yeah, hearing it made me shiver.
+And we were fighting against the race that could calmly talk about something like that.&quot;</p>
+<p>A bitter smile appeared on the female commander's face.</p>
+<p>&quot;Until now humans were not able to stand up against them.
+We're fundamentally different when it comes to our <span title="jp. 生命力 (life force) - I'm a bit unsure about exact meaning here.">vitality</span>.
+After all, our lifespan is tenfold shorter.
+To be honest, I'm really relieved that we were able to manage the ceasefire.&quot;</p>
+<p>&quot;...Yeah.&quot;</p>
+<p>As Kai agreed with her, it reminded him about the exchange he had with a single demon.
+It happened far north.
+In vast Urza, which is controlled by demons, shortly after Kai was able to take back the capital.
+All of a sudden, the succubus queen had appeared.</p>
+<p>[Don't get carried away.
+It was miracle after miracle that you were able to defeat onee-sama.
+If the three of us would still remain here at the capital, you'd have no chance of winning.]</p>
+<p>She was the succubus queen Hinemarill.
+And number two among demons.
+Her pressure was close to that of Vanessa's.</p>
+<p>After a fierce battle Kai was able to defeat the dark empress.
+So he had hoped it would finally reverse the scale between humans and demons.
+But at that very moment he realized that he was wrong.</p>
+<p>&quot;Without a doubt, we got lucky.
+It might really be that we barely won.&quot;</p>
+<p>&quot;...Right. Things have been going too smoothly up until now.&quot;</p>
+<p>Jeanne's expression stiffened.</p>
+<p>&quot;In Urza, thanks to Kai we were able to take back the capital alone.
+But the rest of it is still under the control of demons.
+As for Io... Well.
+It was only because of Alfreyja's rampage that we ended up cooperating with the foreign gods.
+Either way, both remain strong.&quot;</p>
+<p>Both demons and foreign gods.
+Even though their respective heroes were lost, they were able to retain their strength.</p>
+<p><em>With demons we got only the promise of non-interference for arbitary time.</em></p>
+<p><em>With foreign gods we attained one year ceasefire agreement.</em></p>
+<p>Both had their own merits and demerits.
+The non-interference promise with demons could continue for several years, but no one knew when it was going to end.
+With foreign gods they were able to conclude a concrete ceasefire agreement, but it was only for a mere year.</p>
+<p>&quot;Let us not lose our focus.
+Up until now it has been going so smooth, that my subordinates are starting to feel restless.
+But overconfidence is going to get us hurt.&quot;</p>
+<p>&quot;I'll leave that to you, Jeanne.
+Let's see, I think it is this way.&quot;</p>
+<p>They went after Rinne, who still hasn't come back.
+Going deeper into the forest.
+Even though he told her not to venture too far away.</p>
+<p>&quot;Rinne. Hey, Rinne, where are you?&quot;</p>
+<p>Jumping over the roots which were reaching his knees, Kai carried on the animal trail.</p>
+<hr />
+<p><em>TL Note:</em> Reiren POV</p>
+<p>The forest with the ancient tree.
+This forest became a dwelling place of the elves 200 years before.
+Originally the dwelling place of the fairies, the elves came and settled here after the dwarves.
+In the spring flowing with crystal clear underground water...</p>
+<p>&quot;...&quot;</p>
+<p>Water splashed.
+In this transparently clear water, the single figure of an elf was floating face up.
+Her figure looked like that of small human girl.
+With her eyes closed from the dazzling sunlight filtering through the forest, her beautiful azure hair was vividly spread on the water's surface.
+Moreover her almost transparently white skin made her even more beautiful.</p>
+<p><em>TL Note:</em> I think we need some illustrations here...</p>
+<p>But...</p>
+<p>&quot;Aah! Damn, what's with this!&quot;</p>
+<p>Ruining this beautiful scenery, the elven girl got up all of a sudden, while her angry scream echoed throughout the forest.</p>
+<p>&quot;I'm the elven shrine maiden!
+More than a few hundred years I've been performing rites in this forest.
+Even though I've been called with reverence by my brethren as [shrine maiden-sama], why ought I accompany humans in their expedition!&quot;</p>
+<p>A big splash of water arose.
+The elf revealed her anger and started hitting on the water's surface with both her hands time and again.</p>
+<p>&quot;...Huh...Huh...Uh...N-not good.
+For me of all people...
+I came to bathe to calm myself, and instead my heart became even more agitated.&quot;</p>
+<p>It had the completely opposite effect.
+She came to soak in the cold water in order to clear her head, but instead she had a vivid recollection of her memories.</p>
+<p>&quot;Compose... Compose yourself...
+The reason behind a rift among us...
+Alfreyja-dono is the reason behind it after all...&quot;</p>
+<p>The main cause of everything is what happened few weeks ago.
+For long living races like elves, it is not much different from just memories of yesterday.
+She was able to clearly recall it.</p>
+<p>[Everyone except me.
+First I ought burn down all corrupted foreign gods who walk the ground.]</p>
+<p>Who could believe that these were words spoken by the foreign gods hero.
+It was obvious that at that time heaven lord Alfreyja had lost his mind.
+Whether it was brainwashing or confusion.
+Reiren couldn't possibly know details behind it.
+But she had an idea about who could be the culprit.</p>
+<p>&quot;...&quot;</p>
+<p>Her long azure hair spread throughout the water like a stream.
+Putting her hand on her <span title="凹凸の控えめな胸元 - I'm not sure why author needs to put such accent here">moderate</span> chest.
+The elven shrine maiden clenched her teeth.</p>
+<p><em>TL Note:</em> <code>深い森のなか奥歯</code> I don't get this one</p>
+<p>&quot;...Patience. I have to accompany these humans for the sake of vengeance for Alfreyja-dono.
+I already resolved to make this detestable beast to realize the gravity of his crime.&quot;</p>
+<p>The one who caused the heaven lord Alfreyja to change.
+It was highly likely that the culprit behind it was the [Fang King] Rath=IE.
+And it was a duty, bestowed upon Reiren, to ascertain it with her own eyes.</p>
+<p>&quot;That's right. It is a honourable mission for the foreign gods.
+So accompanying humans, so to speak, is a honourable duty to become the elves' representative...
+Right, if I think about it like that...&quot;</p>
+<p><em>TL Note:</em> Talk about escaping reality...</p>
+<p>&quot;Hey, hey?&quot;</p>
+<p>&quot;Hh-yaa!? W-what is it!&quot;</p>
+<p>It almost made her to scream, and then Reiren turned over.
+Cold hand, wet in water, which reached her back now touched her cheek.
+Of course she raised her voice because of the sudden touch from the cold hand, rather than being surprised.</p>
+<p>&quot;...Mu. As I remember thou are Rinne.&quot;</p>
+<p>&quot;Yup.&quot;</p>
+<p>Reiren wondered when she came to this spring.
+Before her was a golden haired girl, her body up to chest being under water.
+Her clothes could be seen on the bank of the spring; it would seem that this girl swam all the way here.</p>
+<p>&quot;It feels so good.
+This water is spring water, right?
+Cold, but so pretty.
+And there is even small fish swimming around.&quot;</p>
+<p>&quot;U-umu.
+It is filtered water from within underground after all.
+With an abundance of clear water, this is a watering place for every living creature of the forest...
+Wait, no, that's not it!&quot;</p>
+<p>She waved her hand and pointed towards Rinne in front of her.</p>
+<p>&quot;W-why are thee here!?&quot;</p>
+<p>&quot;Cuz I searched for you. Kai was looking for you.&quot;</p>
+<p>&quot;...Mu. That guy?&quot;</p>
+<p>Which reminded her that there was indeed some talk during the ceasefire agreement about deciding on some minor details of their cooperation.
+She was so absorbed in her bathing, that she had completely forgetten about the time.</p>
+<p>&quot;Understood, I'm coming.
+Hey, thee too come out of the spring.&quot;</p>
+<p>&quot;Can I swim here?&quot;</p>
+<p>&quot;No way.&quot;</p>
+<p>Her answer came instantly.</p>
+<p>&quot;This is a bathing place for elves only, therefore other races are not allowed.&quot;</p>
+<p>&quot;Muu!&quot;</p>
+<p>Rinne was pouting.</p>
+<p>&quot;I hate such things.
+Things like race, I don't like it.&quot;</p>
+<p>&quot;Race is race after all. It cannot be helped...&quot;</p>
+<p>She started saying, but stopped.
+The reason for Reiren's hesitation was seeing Rinne's white and silk like skin, that wouldn't lose to her own.
+Her skin looked like that of elves.</p>
+<p>On her back could be seen tenma wings, which were usually hidden.
+At their roots the wings were black, but closer to edges they became more white.
+Roots were that of demons, while edges were of angels.
+Even though she had already heard about it, it was actually her first time seeing it with her own eyes.</p>
+<p>&quot;...Oi, Rinne?&quot;</p>
+<p>&quot;What?&quot;</p>
+<p>&quot;Bear with me for a moment.&quot;</p>
+<p>She nervously extended her hands.
+Touching these wings gave a similar feeling to that of angel wings.
+It didn't just look like angel wings, but now she thought it was exactly the same as angel wings.</p>
+<p>&quot;A-ahaha, stop, it is ticklish!&quot;</p>
+<p>&quot;Mu... the colour is good, touching feels the same. They are exactly like that of angel.&quot;</p>
+<p>Both angels and elves belonged to foreign gods race.
+So she wondered if that's the case then wouldn't the girl with elven skin and angel wings belong to the same race.
+But the answer was no.
+Reiren noticed a few other scents from this girl.
+Of demons, of spirits, of cryptids.
+Furthermore there was something else.</p>
+<p>She was an unidentifiable girl, a mix of various races.</p>
+<p>&quot;Thee...&quot;</p>
+<p>While touching girl's wings, she continued gazing at the girl.</p>
+<p>&quot;This is quite a good opportunity.
+Tell me honestly, just who are thee?
+Why thee tags along with Kai?&quot;</p>
+<p>&quot;Dunno.&quot;</p>
+<p>&quot;What?&quot;</p>
+<p>&quot;Just who am I?
+Even I don't know that.
+And Kai told me to [come together] so I'm with him.&quot;</p>
+<p>The golder haired girl, who answered with that, brightened up.
+Reiren wondered whether she'd be angry or upset about the question.
+But contrary to her expectations Rinne gave her answer while placing her hand on her chest with pride.</p>
+<p>&quot;Kai told me [it is fine to be together] himself too.
+Regardless of who says what I don't care.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>&quot;That's why it is fine for me to swim in this spring. It is my freedom!&quot;</p>
+<p>&quot;Such leap of logic is just too much, don't thee think!?&quot;</p>
+<p>Reiren grasped with her hand the hair of Rinne who was swimming.</p>
+<p>&quot;Ai? W-what are you doing damn elf!&quot;</p>
+<p>&quot;I just told thee, this is the bathing place for elves only.
+No other race can use it.&quot;</p>
+<p>&quot;It is fine! I got some elven blood in me.&quot;</p>
+<p>With her hand on her bouncing bossom, Rinne objected.
+Indeed Reiren could see from the pure white skin, that Rinne had some elven blood in her.
+But...</p>
+<p><em>TL Note:</em> For some reason sensei started to put some accent on these peculiar details about girls chests :)</p>
+<p>&quot;<span title="I'm not even going to try to change it">Hohou</span>?
+Then what about this!
+This uselessly big chest and ass!
+Elves do not have such obscene bodies.&quot;</p>
+<p>Reiren pointed her finger on Rinne's left breast.
+Almost as if it was sinking into softness, it gave a profound and heavy feeling of flesh.</p>
+<p>&quot;Kya? W-what are you doing!&quot;</p>
+<p>&quot;Just look at it!
+Thy chest is not like that of elves.
+Our, elves, bodies are far more modest for both woman and man.
+It is our virtue.&quot;</p>
+<p>Figures of both male and female elves tend to be slender, with a little apparent difference.
+Males hardly develop big muscle mass, while females never have big hips or chest like human women.</p>
+<p>From Reiren's point of view, Rinne's body was [too ripe].
+She suspected it might be the influence of human blood, or maybe from demon succubi.</p>
+<p>&quot;How obscene!&quot;</p>
+<p>&quot;I-it is not obscene! You damn elf just got it [non-existent] that's all!&quot;</p>
+<p>&quot;Wha!?&quot;</p>
+<p>The one who claimed to be modest, got her quite modest chest under Rinne's gaze.
+This time it was Reiren's turn to shrink back.</p>
+<p>&quot;What are thee saying!
+It might look like that, but I'm quite confident about my body.
+My body, which has no unnecessary meat, is in fact the best!&quot;</p>
+<p>&quot;It is flat!&quot;</p>
+<p>&quot;What is wrong with being flat!?&quot;</p>
+<p><em>TL Note:</em> Oi, Rinne did you get bullying license on our flat goddess!?</p>
+<p><em>ED Note:</em> She's not wrong though... :eyes:</p>
+<p>Rising both of her hands above her head, she poured spring water onto Rinne's face.</p>
+<p>&quot;You, now you've done it! You damn flat elf!&quot;</p>
+<p>&quot;Are thee still going on about that, thee damn mixed race!
+Thy body is just too obscene!&quot;</p>
+<p>While soaking into spring water, they were glaring at each other.
+Then, the bushes shook and both girls quickly caught onto who it might be.</p>
+<p>&quot;Hey, Rinne? Reiren, are you there?&quot;</p>
+<p>Pushing aside brushes, appeared a young man with ultramarine hair.</p>
+<p>&quot;Ah, there you are. So you've been here all this....&quot;</p>
+<p>Appearing out of the bushes in front of the girls while searching for them, Kai showed relief on his face, but his smile froze immediately.
+He looked back and forth between the clothes of two girls on the bank side, and the girls themself soaking in cold water.</p>
+<p><em>ED Note:</em> Here comes the most cliché event of all time!</p>
+<p>&quot;..Ah, s-sorry! I didn't mean...&quot;</p>
+<p>&quot;Kai, how is it? Did you find them?&quot;</p>
+<p>Following Kai appeared the silver haired girl Jeanne.
+Under sunlight both girls were exposed stark naked, and then there was Kai, who was standing in close proximity to these girls.</p>
+<p>&quot;Kai...&quot;</p>
+<p>Jeanne's gentle face soon became clouded by a heavy glare.</p>
+<p>&quot;To think the reason you wanted to come to look for them...
+Was to peek on them while they were bathing.&quot;</p>
+<p>&quot;Even for a misunderstanding, isn't it a bit too much!?&quot;</p>
+<p>Deep within the elven forest.
+The lone scream of a falsely accused young man echoed.</p>
+<br>
+<br>
+<p>One day, the world had been [overwritten].
+Before Kai's own eyes, the history itself had been re-written by [World Reincarnation]...</p>
+<p>Kai remembered it.
+In his true world, a hundred years ago five races fought to a bitter end over world domination.
+It was known as the Five Races Great War.
+And the victor in this war was humanity, with [prophet] Sid as their leader.
+Sid had crushed the four other races and sealed them away in remote regions.</p>
+<p>However...
+That history disappeared all of the sudden.
+Instead it became the opposite.
+It became a history where [humanity was defeated in the great war].</p>
+<p>Hero [Dark Empress] Vanessa, who led demons, wielders of powerful magic.</p>
+<p>Hero [Heaven Lord] Alfreyja, who led the foreign gods alliance, comprised of angels and elves.</p>
+<p>Hero [Spirit Sovereign] Rikugen Kyouko, who led spirits, ghost-like existences.</p>
+<p>Hero [Fang King] Rath=IE, who led cryptids, enormous and ferocious beasts.</p>
+<p>Four races now controlled the world.
+And mankind, who barely managed to escape the eyes of these four races, was now struggling to survive by hiding in remote regions, ruins of old buildings or underground.
+This was the current state of the [overwritten] world.</p>
+<p><em>Only Rinne and I remember the true world.</em></p>
+<p><em>No one remembers it apart from us.</em></p>
+<p>Then there was Kai himself.
+In this over-written world, he himself, as well as the hero no longer existed.
+It was unclear whether his parents or relatives existed there.
+And both his superiors and colleagues from his previous world no longer remembered him.</p>
+<p>Being in such a hopeless situation...</p>
+<p>&quot;I do not mind it at all though?
+It doesn't bother me to show myself naked in front of a human.&quot;</p>
+<p>&quot;I'm fine too. If it is Kai, I can show him anything.&quot;</p>
+<p>&quot;Umu, not intending to treat Kai as somewhat special, but I'm of a different race.
+For humans it is perfectly fine to see a naked dog or cat, after all?&quot;</p>
+<p>They paid no heed to Kai's suffering.
+Reiren and Rinne just talked carefreely.</p>
+<p>&quot;Jeanne, are thee going to be fussy over such a trifle matter?&quot; <em>TL Note:</em> Reiren</p>
+<p>&quot;...Listen, put on some clothes already.
+It is a matter of how you look.
+The elven body is quite similar to that of humans.&quot;</p>
+<p>Kai had turned away to not watch them changing.
+And Jeanne kept watch on Kai to make sure he did not turn back.</p>
+<p>&quot;Also, Reiren, give me a bit of your time once you finish changing.
+I have something to talk about.
+I'm sure you know what about?&quot;</p>
+<p>&quot;Of course, it is regarding the expedition.
+I came here to cleanse myself in order to prepare for that.&quot;</p>
+<p>Reiren, who finished changing, was now in her seven layered silk garments.
+It was an elven magic tool.
+Once activated, each of the layers could act as powerful protective barriers.</p>
+<p>&quot;I'm going to accompany thee as a representative of foreign gods.
+And in order to avenge Alfreyja-dono we're going to attack western country, where cryptids are.
+Right?&quot;</p>
+<p>&quot;Yeah, but...&quot;</p>
+<p>Looking back at the elf, who was looking up at her, the female commander of Urza Resistance answered with all seriousness.</p>
+<p>&quot;We're heading to the South, not the West.
+We're heading to Yurun country on the South, which is currently the domain of the spirits.&quot;</p>
+<p>&quot;Wha!?&quot;</p>
+<p>It was a completely different story for her.
+But before shrine maiden could raise objections, Kai continued after Jeanne.</p>
+<p>&quot;That's why I came here looking for you.
+To let you know what elven elder said.&quot;</p>
+<p>&quot;I heard nothing of it though?&quot;</p>
+<p>&quot;Someone was enjoying her bath, while we were discussing it.
+And it already got decided.&quot;</p>
+<p>&quot;...Mu. That's... Well...&quot;</p>
+<p>&quot;I'll tell you the reason on our way, let us return quickly.&quot;</p>
+<p>He gave a silent cue to Rinne, who had finished changing.
+Kai pointed towards the animal trail, that led to the village, and walked deep into the ancient forest.</p>
+<hr />
+<p>Io Federation...
+It is a big country in the eastern part of the continent, and at the moment it was under control of the foreign gods.
+Humans, who lost in the war, had to reconstruct ruins into cities and live in hiding, somehow scraping by.
+Each of the 18 human cities is guarded by Resistance soldiers, who serve as defence for the people from the foreign gods invasion.</p>
+<p>The headquarters of the Resistance was in 8th ward Cassiopeia.
+It was at the site of what was once a large scale factory, and in one of the areas there...</p>
+<p>&quot;Jeanne-dono is about to depart... right?&quot;</p>
+<p>In the office for commanding officers.
+There were three man and woman standing in this room, with curtains obscuring the sunlight.
+It was the elderly soldier, standing in center, who addressed Jeanne.
+He was the staff officer, Tsekhman.
+The man who serves as the right hand to Io Resistance's Commander.</p>
+<p>&quot;Isn't it too early?&quot; <em>TL Note:</em> Is it continuation of Tsekhman dialogue?</p>
+<p>&quot;Jeanne-sama made her decision.
+Our, Urza Resistance's, morale is at its peak.
+To suggest not to continue our expedition...&quot;</p>
+<p>Face to face with the old soldier was Fairin, one of the Urza Resistance's top brass.
+Normally being by Jeanne's side as her guard, right now she had to separate with her master, in order to inform them.</p>
+<p>&quot;And the reason is...
+Defeating Vanessa in Urza and forcing demons to leave you alone.
+And now achieving a ceasefire agreement with the foreign gods.
+You do not want to lose your momentum here?&quot;</p>
+<p>&quot;That's right. However...&quot;</p>
+<p>Said Commander's bodyguard Fairin.
+And then Urza strongest female warrior continued with husky voice...</p>
+<p>&quot;Jeanne-sama is concerned.
+Up until now it has been going too smooth.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>&quot;Even with the loss of Vanessa, the demons remain strong.
+And then the ceasefire with the foreign gods too, wasn't the result of an actual victory in war, but instead they suggested it themselves.&quot;</p>
+<p>&quot;That's...&quot;</p>
+<p>&quot;What an unlovely boring response.&quot;</p>
+<p>Behind the old soldier, a plump man turned away from a window, slowly turning towards Fairin.</p>
+<p>&quot;Reclaiming Urza's capital, and then achieving truce with foreign gods in this country...
+Despite achieving so much, he has no intention to relax even a bit?&quot;</p>
+<p>&quot;Indeed. And I share the same opinion.
+And as for the remaining two heroes, we ought to remain vigilant.&quot;</p>
+<p>&quot;How wise of you.&quot;</p>
+<p>Said Commander Dante, who looked like a bored child.
+This self-proclaimed emperor was known to be a lump of conceit and pride.
+He had ambition to become a hero, leading the mankind, but instead the foreign gods used it against him and let him taste humiliation of being taken a prisoner.
+And the one who freed this Dante was Jeanne.</p>
+<p>Even though he was thankful to his rival for saving his life, but just admitting the achievements of his rival was an annoyance for him.
+And that was his current state of mind.</p>
+<p>&quot;It seems Jeanne is planning to head south, to Yurun.&quot;</p>
+<p>&quot;Yes.&quot;</p>
+<p>&quot;Spirits are quite a troublesome bunch.
+Even now we still have no idea how those eerie entities live,
+and also how to deal with them.
+Plus on top of that, we cannot talk with them.&quot;</p>
+<p>What that meant... is that truce was not possible.
+They do not posses intelligence that would make them temporarily retreat like demons,
+or seeking peace like foreign gods.
+The kind of species that would fight until the very end.</p>
+<p>&quot;How are you planning to drive away those monsters?&quot;</p>
+<p>&quot;South Yurun Resistance Army Commander is an acquaintance of mine.&quot;</p>
+<p>Fairin replied.
+And the staff officer, who raised his eyebrow at her words, said:</p>
+<p>&quot;Lion King Balmung?&quot;</p>
+<p>&quot;Yeah, I've been indebted to him. Hopefully he still remembers me.&quot;</p>
+<p>Fairin faintly smiled.
+It was quite rare for this female soldier, who remained cold as steel, to show such emotions.</p>
+<p>&quot;I have no doubt that he is a great commander.&quot;</p>
+<p>&quot;Quite different from me, right?&quot;</p>
+<p>Once again Dante lamented.</p>
+<p>&quot;Me and Jeanne failed to establish cooperative relationships after all.
+So to avoid repeating this mistake, you decided to head to the country with a more reliable commander, something like that?&quot;</p>
+<p>&quot;I wouldn't dare.&quot;</p>
+<p>&quot;Stop it. The only possible reason for you to choose Yurun as your next destination can be only it.
+This time you want to establish an allied front between two resistance armies and fight against spirits together.&quot;</p>
+<p>&quot;...&quot;</p>
+<p>&quot;Jeanne, indeed, was able to take the demons by surprise.
+But now two remaining races should become more wary of humans.
+This time you will not be able to surprise them.
+However mankind would be at a disadvantage in a full-fledged war.
+The chances of victory are quite slim unless you ally with your fellow comrades.&quot;</p>
+<p>Therefore they are planning to head to south, where they can find a reliable commander.
+That was Jeanne's plan.</p>
+<p>&quot;Am I not right?&quot;</p>
+<p>&quot;...It is a pity.&quot; <em>TL Note:</em> This <code>……惜しいですね</code> is a bit unclear, but I think she actually means that Dante's wits are wasted on him?</p>
+<p>Fairin chuckled.
+It was simply her way to express admiration for Dante's insight.</p>
+<p>&quot;Commander Dante, it might be rude, but I'd like to say one thing.&quot;</p>
+<p>&quot;Go ahead.&quot;</p>
+<p>&quot;You certainly have talent to see through the situation.
+If you'd be able to throw away your cheap pride and seriously behave yourself as a commander, then I believe you'd really be able to take the role of a leader for humanity.&quot;</p>
+<p>Or even if not in a commander's role, but as officer, he'd be able to leave a mark on history.</p>
+<p>&quot;It is still not too late.
+How about using your wits for a real purpose?&quot;</p>
+<p>&quot;...Humph.&quot;</p>
+<p>Plump commander turned his back towards her.</p>
+<p>&quot;Tell Jeanne this.
+If he gets the audience bored with this pretence of being a leader of humanity,
+soon enough I'll drag him down and stand on the stage myself.&quot;</p>
+<p>&quot;Understood.&quot;</p>
+<p>&quot;That will be all.
+As a farewell gift, I'll grant you provisions and ammunition.&quot;</p>
+<p>Bowing towards Dante, who quickly finished saying his piece, and giving a small nod towards the old soldier, Jeanne's bodyguard turned back.</p>
+<p>Two days later.
+Urza Resistance Army, led by Jeanne, departed towards the south.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../3/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../3/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
