@@ -1,0 +1,18 @@
+language: minimal
+
+script:
+    - wget https://github.com/rust-lang-nursery/mdBook/releases/download/v0.3.0/mdbook-v0.3.0-x86_64-unknown-linux-gnu.tar.gz
+    - tar -xzf mdbook-v0.3.0-x86_64-unknown-linux-gnu.tar.gz
+    - ./mdbook build
+    - mv book/ ~/
+    - rm -rf mdbook*
+
+deploy:
+    local_dir: /home/$USER/book
+    provider: pages
+    skip_cleanup: false
+    github_token: $GIT_TOKEN
+    keep_history: false
+    committer_from_gh: true
+    on:
+        branch: master

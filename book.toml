@@ -1,0 +1,8 @@
+[book]
+authors = ["Douman"]
+multilingual = false
+src = "src"
+title = "Naze Boku no Sekai wo Dare mo Oboeteinainoka"
+
+[output.html]
+additional-css = ["text-style.css"]
